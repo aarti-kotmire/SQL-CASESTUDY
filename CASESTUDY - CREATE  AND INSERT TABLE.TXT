@@ -1,0 +1,653 @@
+SQL> CREATE TABLE CUSTOMERS(
+  2  CUSTOMERID NUMBER PRIMARY KEY,
+  3  NAME VARCHAR(100) NOT NULL,
+  4  EMAIL VARCHAR(100) UNIQUE,
+  5  PHONE VARCHAR(15) NOT NULL,
+  6  ADDRESS VARCHAR(255)
+  7  );
+
+Table created.
+
+SQL> CREATE TABLE TRANSACTIONS(
+  2  
+SQL> CREATE TABLE ACCOUNTS(
+  2  ACCOUNTID NUMBER PRIMARY KEY,
+  3  ACCOUNTTYPE VARCHAR(20) NOT NULL,
+  4  BALANCE NUMBER DEFAULT 0 CHECK(BALANCE>=0),
+  5  CUSTOMERID NUMBER REFERENCES CUSTOMERS(CUSTOMERID)
+  6  );
+
+Table created.
+
+SQL> CREATE TABLE TRANSACTIONS
+  2  (
+  3  TRANSACTIONID NUMBER PRIMARY KEY,
+  4  TDATE DATE NOT NULL,
+  5  AMOUNT NUMBER NOT NULL CHECK(AMOUNT>=0),
+  6  ACCOUNTID NUMBER REFERENCES ACCOUNTS(ACCOUNTID)
+  7  );
+
+Table created.
+
+SQL> INSERT INTO CUSTOMERS(&CUSTOMERID, '&NAME', '&EMAIL', '&PHONE', '&ADDRESS');
+Enter value for customerid: 1
+Enter value for name: Anjali Deshmukh
+Enter value for email: anjali.d123@gmail.com
+Enter value for phone: 9876577868
+Enter value for address: 14, MG Road, Pune, Maharashtra
+old   1: INSERT INTO CUSTOMERS(&CUSTOMERID, '&NAME', '&EMAIL', '&PHONE', '&ADDRESS')
+new   1: INSERT INTO CUSTOMERS(1, 'Anjali Deshmukh', 'anjali.d123@gmail.com', '9876577868', '14, MG Road, Pune, Maharashtra')
+INSERT INTO CUSTOMERS(1, 'Anjali Deshmukh', 'anjali.d123@gmail.com', '9876577868', '14, MG Road, Pune, Maharashtra')
+                      *
+ERROR at line 1:
+ORA-00928: missing SELECT keyword 
+
+
+SQL> INSERT INTO CUSTOMERS VALUES(&CUSTOMERID, '&NAME', '&EMAIL', '&PHONE', '&ADDRESS');
+Enter value for customerid: 1
+Enter value for name: Anjali Deshmukh
+Enter value for email: anjali.d123@gmail.com
+Enter value for phone: 9867452344
+Enter value for address: 14, MG Road, Pune, Maharashtra
+old   1: INSERT INTO CUSTOMERS VALUES(&CUSTOMERID, '&NAME', '&EMAIL', '&PHONE', '&ADDRESS')
+new   1: INSERT INTO CUSTOMERS VALUES(1, 'Anjali Deshmukh', 'anjali.d123@gmail.com', '9867452344', '14, MG Road, Pune, Maharashtra')
+
+1 row created.
+
+SQL> INSERT INTO CUSTOMERS VALUES(&CUSTOMERID, '&NAME', '&EMAIL', '&PHONE', '&ADDRESS');
+Enter value for customerid: 2
+Enter value for name: Ravi Sharma
+Enter value for email: ravi.s111@gmail.com
+Enter value for phone: 9120557888
+Enter value for address: 221B, Baner Road, Pune
+old   1: INSERT INTO CUSTOMERS VALUES(&CUSTOMERID, '&NAME', '&EMAIL', '&PHONE', '&ADDRESS')
+new   1: INSERT INTO CUSTOMERS VALUES(2, 'Ravi Sharma', 'ravi.s111@gmail.com', '9120557888', '221B, Baner Road, Pune')
+
+1 row created.
+
+SQL> INSERT INTO CUSTOMERS VALUES(&CUSTOMERID, '&NAME', '&EMAIL', '&PHONE', '&ADDRESS');
+Enter value for customerid: 3
+Enter value for name: Aarti Thorat
+Enter value for email: aartik14@gmail.com
+Enter value for phone: 8805546677
+Enter value for address: 7, Katraj, Pune
+old   1: INSERT INTO CUSTOMERS VALUES(&CUSTOMERID, '&NAME', '&EMAIL', '&PHONE', '&ADDRESS')
+new   1: INSERT INTO CUSTOMERS VALUES(3, 'Aarti Thorat', 'aartik14@gmail.com', '8805546677', '7, Katraj, Pune')
+
+1 row created.
+
+SQL> INSERT INTO CUSTOMERS VALUES(&CUSTOMERID, '&NAME', '&EMAIL', '&PHONE', '&ADDRESS');
+Enter value for customerid: 4
+Enter value for name: Jayashree Thorat
+Enter value for email: jayashree232@gmail.com
+Enter value for phone: 7865449900
+Enter value for address: 32, Tilak Road, Pune
+old   1: INSERT INTO CUSTOMERS VALUES(&CUSTOMERID, '&NAME', '&EMAIL', '&PHONE', '&ADDRESS')
+new   1: INSERT INTO CUSTOMERS VALUES(4, 'Jayashree Thorat', 'jayashree232@gmail.com', '7865449900', '32, Tilak Road, Pune')
+
+1 row created.
+
+SQL> select * from customers;
+
+CUSTOMERID                                                                      
+----------                                                                      
+NAME                                                                            
+--------------------------------------------------------------------------------
+EMAIL                                                                           
+--------------------------------------------------------------------------------
+PHONE                                                                           
+---------------                                                                 
+ADDRESS                                                                         
+--------------------------------------------------------------------------------
+         1                                                                      
+Anjali Deshmukh                                                                 
+anjali.d123@gmail.com                                                           
+
+CUSTOMERID                                                                      
+----------                                                                      
+NAME                                                                            
+--------------------------------------------------------------------------------
+EMAIL                                                                           
+--------------------------------------------------------------------------------
+PHONE                                                                           
+---------------                                                                 
+ADDRESS                                                                         
+--------------------------------------------------------------------------------
+9867452344                                                                      
+14, MG Road, Pune, Maharashtra                                                  
+                                                                                
+
+CUSTOMERID                                                                      
+----------                                                                      
+NAME                                                                            
+--------------------------------------------------------------------------------
+EMAIL                                                                           
+--------------------------------------------------------------------------------
+PHONE                                                                           
+---------------                                                                 
+ADDRESS                                                                         
+--------------------------------------------------------------------------------
+         2                                                                      
+Ravi Sharma                                                                     
+ravi.s111@gmail.com                                                             
+
+CUSTOMERID                                                                      
+----------                                                                      
+NAME                                                                            
+--------------------------------------------------------------------------------
+EMAIL                                                                           
+--------------------------------------------------------------------------------
+PHONE                                                                           
+---------------                                                                 
+ADDRESS                                                                         
+--------------------------------------------------------------------------------
+9120557888                                                                      
+221B, Baner Road, Pune                                                          
+                                                                                
+
+CUSTOMERID                                                                      
+----------                                                                      
+NAME                                                                            
+--------------------------------------------------------------------------------
+EMAIL                                                                           
+--------------------------------------------------------------------------------
+PHONE                                                                           
+---------------                                                                 
+ADDRESS                                                                         
+--------------------------------------------------------------------------------
+         3                                                                      
+Aarti Thorat                                                                    
+aartik14@gmail.com                                                              
+
+CUSTOMERID                                                                      
+----------                                                                      
+NAME                                                                            
+--------------------------------------------------------------------------------
+EMAIL                                                                           
+--------------------------------------------------------------------------------
+PHONE                                                                           
+---------------                                                                 
+ADDRESS                                                                         
+--------------------------------------------------------------------------------
+8805546677                                                                      
+7, Katraj, Pune                                                                 
+                                                                                
+
+CUSTOMERID                                                                      
+----------                                                                      
+NAME                                                                            
+--------------------------------------------------------------------------------
+EMAIL                                                                           
+--------------------------------------------------------------------------------
+PHONE                                                                           
+---------------                                                                 
+ADDRESS                                                                         
+--------------------------------------------------------------------------------
+         4                                                                      
+Jayashree Thorat                                                                
+jayashree232@gmail.com                                                          
+
+CUSTOMERID                                                                      
+----------                                                                      
+NAME                                                                            
+--------------------------------------------------------------------------------
+EMAIL                                                                           
+--------------------------------------------------------------------------------
+PHONE                                                                           
+---------------                                                                 
+ADDRESS                                                                         
+--------------------------------------------------------------------------------
+7865449900                                                                      
+32, Tilak Road, Pune                                                            
+                                                                                
+
+SQL> set linesize 200;
+SQL> set pagesize 200;
+SQL> select * from customers;
+
+CUSTOMERID NAME                                                                                                                                                                                         
+---------- ----------------------------------------------------------------------------------------------------                                                                                         
+EMAIL                                                                                                PHONE                                                                                              
+---------------------------------------------------------------------------------------------------- ---------------                                                                                    
+ADDRESS                                                                                                                                                                                                 
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+         1 Anjali Deshmukh                                                                                                                                                                              
+anjali.d123@gmail.com                                                                                9867452344                                                                                         
+14, MG Road, Pune, Maharashtra                                                                                                                                                                          
+                                                                                                                                                                                                        
+         2 Ravi Sharma                                                                                                                                                                                  
+ravi.s111@gmail.com                                                                                  9120557888                                                                                         
+221B, Baner Road, Pune                                                                                                                                                                                  
+                                                                                                                                                                                                        
+         3 Aarti Thorat                                                                                                                                                                                 
+aartik14@gmail.com                                                                                   8805546677                                                                                         
+7, Katraj, Pune                                                                                                                                                                                         
+                                                                                                                                                                                                        
+         4 Jayashree Thorat                                                                                                                                                                             
+jayashree232@gmail.com                                                                               7865449900                                                                                         
+32, Tilak Road, Pune                                                                                                                                                                                    
+                                                                                                                                                                                                        
+
+SQL> set linesize 500;
+SQL> set pagesize 500;
+SQL> select * from customers;
+
+CUSTOMERID NAME                                                                                                 EMAIL                                                                                                PHONE           ADDRESS                                                                                                                                                                                                                                                                        
+---------- ---------------------------------------------------------------------------------------------------- ---------------------------------------------------------------------------------------------------- --------------- ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------                
+         1 Anjali Deshmukh                                                                                      anjali.d123@gmail.com                                                                                9867452344      14, MG Road, Pune, Maharashtra                                                                                                                                                                                                                                                 
+         2 Ravi Sharma                                                                                          ravi.s111@gmail.com                                                                                  9120557888      221B, Baner Road, Pune                                                                                                                                                                                                                                                         
+         3 Aarti Thorat                                                                                         aartik14@gmail.com                                                                                   8805546677      7, Katraj, Pune                                                                                                                                                                                                                                                                
+         4 Jayashree Thorat                                                                                     jayashree232@gmail.com                                                                               7865449900      32, Tilak Road, Pune                                                                                                                                                                                                                                                           
+
+SQL> ed
+Wrote file afiedt.buf
+
+  1  COLUMN CustomerID FORMAT 999999;
+  2  --COLUMN Name FORMAT A30;
+  3  --COLUMN Email FORMAT A35;
+  4  --COLUMN Phone FORMAT A15;
+  5* --COLUMN Address FORMAT A50;
+SQL> /
+COLUMN CustomerID FORMAT 999999;
+*
+ERROR at line 1:
+ORA-00900: invalid SQL statement 
+
+
+SQL> ed
+Wrote file afiedt.buf
+
+  1  COLUMN CustomerID FORMAT 999999
+  2  --COLUMN Name FORMAT A30;
+  3  --COLUMN Email FORMAT A35;
+  4  --COLUMN Phone FORMAT A15;
+  5* --COLUMN Address FORMAT A50;
+SQL> /
+COLUMN CustomerID FORMAT 999999
+*
+ERROR at line 1:
+ORA-00900: invalid SQL statement 
+
+
+SQL> COLUMN CustomerID FORMAT 999999
+SQL> COLUMN Name FORMAT A30
+SQL> COLUMN Email FORMAT A35
+SQL> COLUMN Phone FORMAT A15
+SQL> COLUMN Address FORMAT A50
+SQL> select * from customers;
+
+CUSTOMERID NAME                           EMAIL                               PHONE           ADDRESS                                                                                                                                                                                                                                                                                                                                                                                                               
+---------- ------------------------------ ----------------------------------- --------------- --------------------------------------------------                                                                                                                                                                                                                                                                                                                                                                    
+         1 Anjali Deshmukh                anjali.d123@gmail.com               9867452344      14, MG Road, Pune, Maharashtra                                                                                                                                                                                                                                                                                                                                                                                        
+         2 Ravi Sharma                    ravi.s111@gmail.com                 9120557888      221B, Baner Road, Pune                                                                                                                                                                                                                                                                                                                                                                                                
+         3 Aarti Thorat                   aartik14@gmail.com                  8805546677      7, Katraj, Pune                                                                                                                                                                                                                                                                                                                                                                                                       
+         4 Jayashree Thorat               jayashree232@gmail.com              7865449900      32, Tilak Road, Pune                                                                                                                                                                                                                                                                                                                                                                                                  
+
+SQL> COLUMN CustomerID FORMAT 999999
+SQL> COLUMN ACCOUNTID FORMAT 999999
+SQL> COLUMN ACCOUNYTYPE FORMAT A30
+SQL> COLUMN BALANCE FORMAT 999999
+SQL> INSERT INTO ACCOUNTS VALUES(&ACCOUNTID, '&ACCOUNTTYPE', &BALANCE, &CUSTOMERID);
+Enter value for accountid: 1001
+Enter value for accounttype: SAVINGS
+Enter value for balance: 28450.00
+Enter value for customerid: 1
+old   1: INSERT INTO ACCOUNTS VALUES(&ACCOUNTID, '&ACCOUNTTYPE', &BALANCE, &CUSTOMERID)
+new   1: INSERT INTO ACCOUNTS VALUES(1001, 'SAVINGS', 28450.00, 1)
+
+1 row created.
+
+SQL> INSERT INTO ACCOUNTS VALUES(&ACCOUNTID, '&ACCOUNTTYPE', &BALANCE, &CUSTOMERID);
+Enter value for accountid: 1002
+Enter value for accounttype: CURRENT
+Enter value for balance: 1,15,200.90
+Enter value for customerid: 2
+old   1: INSERT INTO ACCOUNTS VALUES(&ACCOUNTID, '&ACCOUNTTYPE', &BALANCE, &CUSTOMERID)
+new   1: INSERT INTO ACCOUNTS VALUES(1002, 'CURRENT', 1,15,200.90, 2)
+INSERT INTO ACCOUNTS VALUES(1002, 'CURRENT', 1,15,200.90, 2)
+            *
+ERROR at line 1:
+ORA-00913: too many values 
+
+
+SQL> INSERT INTO ACCOUNTS VALUES(&ACCOUNTID, '&ACCOUNTTYPE', &BALANCE, &CUSTOMERID);
+Enter value for accountid: 1002
+Enter value for accounttype: CURRENT
+Enter value for balance: 49,300
+Enter value for customerid: 2
+old   1: INSERT INTO ACCOUNTS VALUES(&ACCOUNTID, '&ACCOUNTTYPE', &BALANCE, &CUSTOMERID)
+new   1: INSERT INTO ACCOUNTS VALUES(1002, 'CURRENT', 49,300, 2)
+INSERT INTO ACCOUNTS VALUES(1002, 'CURRENT', 49,300, 2)
+            *
+ERROR at line 1:
+ORA-00913: too many values 
+
+
+SQL> INSERT INTO ACCOUNTS VALUES(&ACCOUNTID, '&ACCOUNTTYPE', &BALANCE, &CUSTOMERID);
+Enter value for accountid: 1002
+Enter value for accounttype: CURRENT
+Enter value for balance: 49300.90
+Enter value for customerid: 2
+old   1: INSERT INTO ACCOUNTS VALUES(&ACCOUNTID, '&ACCOUNTTYPE', &BALANCE, &CUSTOMERID)
+new   1: INSERT INTO ACCOUNTS VALUES(1002, 'CURRENT', 49300.90, 2)
+
+1 row created.
+
+SQL> INSERT INTO ACCOUNTS VALUES(&ACCOUNTID, '&ACCOUNTTYPE', &BALANCE, &CUSTOMERID);
+Enter value for accountid: 1003
+Enter value for accounttype: SAVINGS
+Enter value for balance: 230000
+Enter value for customerid: 2
+old   1: INSERT INTO ACCOUNTS VALUES(&ACCOUNTID, '&ACCOUNTTYPE', &BALANCE, &CUSTOMERID)
+new   1: INSERT INTO ACCOUNTS VALUES(1003, 'SAVINGS', 230000, 2)
+
+1 row created.
+
+SQL> INSERT INTO ACCOUNTS VALUES(&ACCOUNTID, '&ACCOUNTTYPE', &BALANCE, &CUSTOMERID);
+Enter value for accountid: 1004
+Enter value for accounttype: CURRENT
+Enter value for balance: NULL
+Enter value for customerid: 3
+old   1: INSERT INTO ACCOUNTS VALUES(&ACCOUNTID, '&ACCOUNTTYPE', &BALANCE, &CUSTOMERID)
+new   1: INSERT INTO ACCOUNTS VALUES(1004, 'CURRENT', NULL, 3)
+
+1 row created.
+
+SQL> SELECT * FROM ACCOUNTS;
+
+ACCOUNTID ACCOUNTTYPE          BALANCE CUSTOMERID                                                                                                                                                                                                                                                                                                                                                                                                                                                                   
+--------- -------------------- ------- ----------                                                                                                                                                                                                                                                                                                                                                                                                                                                                   
+     1001 SAVINGS                28450          1                                                                                                                                                                                                                                                                                                                                                                                                                                                                   
+     1002 CURRENT                49301          2                                                                                                                                                                                                                                                                                                                                                                                                                                                                   
+     1003 SAVINGS               230000          2                                                                                                                                                                                                                                                                                                                                                                                                                                                                   
+     1004 CURRENT                               3                                                                                                                                                                                                                                                                                                                                                                                                                                                                   
+
+SQL> COLUMN TRANSACTIONID FORMAT 999999
+SQL> COLUMN TRANSACTIONTYPE FORMAT A30
+SQL> COLUMN AMOUNT FORMAT 999999
+SQL> COLUMN DATE FORMAT A30
+SQL> COLUMN ACCOUNTID FORMAT 999999
+SQL> INSERT INTO TRANSACTIONS VALUES(&TRANSACTIONTID, '&TDATE', &AMOUNT, '&TRANSACTIONTYPE');
+Enter value for transactiontid: 5001
+Enter value for tdate: 01-AUG-2022
+Enter value for amount: 12500
+Enter value for transactiontype: CREDIT
+old   1: INSERT INTO TRANSACTIONS VALUES(&TRANSACTIONTID, '&TDATE', &AMOUNT, '&TRANSACTIONTYPE')
+new   1: INSERT INTO TRANSACTIONS VALUES(5001, '01-AUG-2022', 12500, 'CREDIT')
+INSERT INTO TRANSACTIONS VALUES(5001, '01-AUG-2022', 12500, 'CREDIT')
+                                                            *
+ERROR at line 1:
+ORA-01722: invalid number 
+
+
+SQL> INSERT INTO TRANSACTIONS VALUES(&TRANSACTIONTID, '&TDATE', &AMOUNT, '&TRANSACTIONTYPE', &ACCOUNTID);
+Enter value for transactiontid: 5001
+Enter value for tdate: 01-JAN-2022
+Enter value for amount: 12500
+Enter value for transactiontype: CREDIT
+Enter value for accountid: 1001
+old   1: INSERT INTO TRANSACTIONS VALUES(&TRANSACTIONTID, '&TDATE', &AMOUNT, '&TRANSACTIONTYPE', &ACCOUNTID)
+new   1: INSERT INTO TRANSACTIONS VALUES(5001, '01-JAN-2022', 12500, 'CREDIT', 1001)
+INSERT INTO TRANSACTIONS VALUES(5001, '01-JAN-2022', 12500, 'CREDIT', 1001)
+            *
+ERROR at line 1:
+ORA-00913: too many values 
+
+
+SQL> ED
+Wrote file afiedt.buf
+
+  1  CREATE TABLE TRANSACTIONS1
+  2    (
+  3      TRANSACTIONID NUMBER PRIMARY KEY,
+  4      TDATE DATE NOT NULL,
+  5      AMOUNT NUMBER NOT NULL CHECK(AMOUNT>=0),
+  6      ACCOUNTID NUMBER REFERENCES ACCOUNTS(ACCOUNTID)
+  7       TRANSACTIONTYPE VARCHAR(20) NOT NULL
+  8*     )/
+SQL> 
+SQL> 
+SQL> 
+SQL> 
+SQL> 
+SQL> 
+SQL> /
+     TRANSACTIONTYPE VARCHAR(20) NOT NULL
+     *
+ERROR at line 7:
+ORA-00907: missing right parenthesis 
+
+
+SQL> ED
+Wrote file afiedt.buf
+
+  1  CREATE TABLE TRANSACTIONS1
+  2    (
+  3      TRANSACTIONID NUMBER PRIMARY KEY,
+  4      TDATE DATE NOT NULL,
+  5      AMOUNT NUMBER NOT NULL CHECK(AMOUNT>=0),
+  6      ACCOUNTID NUMBER REFERENCES ACCOUNTS(ACCOUNTID)
+  7      TRANSACTIONTYPE VARCHAR(20) NOT NULL
+  8*     )
+SQL> /
+    TRANSACTIONTYPE VARCHAR(20) NOT NULL
+    *
+ERROR at line 7:
+ORA-00907: missing right parenthesis 
+
+
+SQL> ED
+Wrote file afiedt.buf
+
+  1  CREATE TABLE TRANSACTIONS1
+  2    (
+  3      TRANSACTIONID NUMBER PRIMARY KEY,
+  4      TDATE DATE NOT NULL,
+  5      AMOUNT NUMBER NOT NULL CHECK(AMOUNT>=0),
+  6      ACCOUNTID NUMBER REFERENCES ACCOUNTS(ACCOUNTID),
+  7      TRANSACTIONTYPE VARCHAR(20) NOT NULL
+  8*     )
+SQL> /
+
+Table created.
+
+SQL> DROP TABLE TRASACTIONS;
+DROP TABLE TRASACTIONS
+           *
+ERROR at line 1:
+ORA-00942: table or view does not exist 
+
+
+SQL> ED
+Wrote file afiedt.buf
+
+  1* DROP TABLE TRASACTIONS
+SQL> ED
+Wrote file afiedt.buf
+
+  1  CREATE TABLE TRANSACTIONS
+  2        (
+  3          TRANSACTIONID NUMBER PRIMARY KEY,
+  4          TDATE DATE NOT NULL,
+  5          AMOUNT NUMBER NOT NULL CHECK(AMOUNT>=0),
+  6          ACCOUNTID NUMBER REFERENCES ACCOUNTS(ACCOUNTID),
+  7          TRANSACTIONTYPE VARCHAR(20) NOT NULL
+  8*        )/
+SQL> /
+       )/
+        *
+ERROR at line 8:
+ORA-00922: missing or invalid option 
+
+
+SQL> ED
+Wrote file afiedt.buf
+
+  1  CREATE TABLE TRANSACTIONS
+  2        (
+  3          TRANSACTIONID NUMBER PRIMARY KEY,
+  4          TDATE DATE NOT NULL,
+  5          AMOUNT NUMBER NOT NULL CHECK(AMOUNT>=0),
+  6          ACCOUNTID NUMBER REFERENCES ACCOUNTS(ACCOUNTID),
+  7          TRANSACTIONTYPE VARCHAR(20) NOT NULL
+  8*        )
+SQL> /
+CREATE TABLE TRANSACTIONS
+             *
+ERROR at line 1:
+ORA-00955: name is already used by an existing object 
+
+
+SQL> DROP TABLE TRANSACTIONS;
+
+Table dropped.
+
+SQL> SELECT * FROM TRANSACTION1;
+SELECT * FROM TRANSACTION1
+              *
+ERROR at line 1:
+ORA-00942: table or view does not exist 
+
+
+SQL> SELECT * FROM TRANSACTION;
+SELECT * FROM TRANSACTION
+              *
+ERROR at line 1:
+ORA-00942: table or view does not exist 
+
+
+SQL> ED
+Wrote file afiedt.buf
+
+  1  CREATE TABLE TRANSACTIONS
+  2           (
+  3              TRANSACTIONID NUMBER PRIMARY KEY,
+  4              TDATE DATE NOT NULL,
+  5              AMOUNT NUMBER NOT NULL CHECK(AMOUNT>=0),
+  6              ACCOUNTID NUMBER REFERENCES ACCOUNTS(ACCOUNTID),
+  7              TRANSACTIONTYPE VARCHAR(20) NOT NULL
+  8*           )
+SQL> /
+
+Table created.
+
+SQL> INSERT INTO TRANSACTIONS VALUES(&TRANSACTIONTID, '&TDATE', &AMOUNT, '&TRANSACTIONTYPE', &ACCOUNTID);
+Enter value for transactiontid: 5001
+Enter value for tdate: 01-AUG-2022
+Enter value for amount: 12500
+Enter value for transactiontype: CREDIT
+Enter value for accountid: 1001
+old   1: INSERT INTO TRANSACTIONS VALUES(&TRANSACTIONTID, '&TDATE', &AMOUNT, '&TRANSACTIONTYPE', &ACCOUNTID)
+new   1: INSERT INTO TRANSACTIONS VALUES(5001, '01-AUG-2022', 12500, 'CREDIT', 1001)
+INSERT INTO TRANSACTIONS VALUES(5001, '01-AUG-2022', 12500, 'CREDIT', 1001)
+                                                            *
+ERROR at line 1:
+ORA-01722: invalid number 
+
+
+SQL> DROP TABLE TRANSACTIONS;
+
+Table dropped.
+
+SQL> ED
+Wrote file afiedt.buf
+
+  1   CREATE TABLE TRANSACTIONS
+  2               (
+  3                  TRANSACTIONID NUMBER PRIMARY KEY,
+  4                  TDATE DATE NOT NULL,
+  5                  AMOUNT NUMBER NOT NULL CHECK(AMOUNT>=0),
+  6                  TRANSACTIONTYPE VARCHAR(20) NOT NULL,
+  7                  ACCOUNTID NUMBER REFERENCES ACCOUNTS(ACCOUNTID)
+  8*              )/
+  9  /
+             )/
+              *
+ERROR at line 8:
+ORA-00922: missing or invalid option 
+
+
+SQL> ED
+Wrote file afiedt.buf
+
+  1   CREATE TABLE TRANSACTIONS
+  2               (
+  3                  TRANSACTIONID NUMBER PRIMARY KEY,
+  4                  TDATE DATE NOT NULL,
+  5                  AMOUNT NUMBER NOT NULL CHECK(AMOUNT>=0),
+  6                  TRANSACTIONTYPE VARCHAR(20) NOT NULL,
+  7                  ACCOUNTID NUMBER REFERENCES ACCOUNTS(ACCOUNTID)
+  8*              )
+SQL> /
+
+Table created.
+
+SQL> INSERT INTO TRANSACTIONS VALUES(&TRANSACTIONTID, '&TDATE', &AMOUNT, '&TRANSACTIONTYPE', &ACCOUNTID);
+Enter value for transactiontid: 5001
+Enter value for tdate: 21-JAN-2022
+Enter value for amount: 23000
+Enter value for transactiontype: CREDIT
+Enter value for accountid: 1001
+old   1: INSERT INTO TRANSACTIONS VALUES(&TRANSACTIONTID, '&TDATE', &AMOUNT, '&TRANSACTIONTYPE', &ACCOUNTID)
+new   1: INSERT INTO TRANSACTIONS VALUES(5001, '21-JAN-2022', 23000, 'CREDIT', 1001)
+
+1 row created.
+
+SQL> INSERT INTO TRANSACTIONS VALUES(&TRANSACTIONTID, '&TDATE', &AMOUNT, '&TRANSACTIONTYPE', &ACCOUNTID);
+Enter value for transactiontid: 5002
+Enter value for tdate: 22-JUN-2025
+Enter value for amount: 50000
+Enter value for transactiontype: DEBIT
+Enter value for accountid: 1002
+old   1: INSERT INTO TRANSACTIONS VALUES(&TRANSACTIONTID, '&TDATE', &AMOUNT, '&TRANSACTIONTYPE', &ACCOUNTID)
+new   1: INSERT INTO TRANSACTIONS VALUES(5002, '22-JUN-2025', 50000, 'DEBIT', 1002)
+
+1 row created.
+
+SQL> INSERT INTO TRANSACTIONS VALUES(&TRANSACTIONTID, '&TDATE', &AMOUNT, '&TRANSACTIONTYPE', &ACCOUNTID);
+Enter value for transactiontid: 5003
+Enter value for tdate: 7-AUG-2021
+Enter value for amount: 80000
+Enter value for transactiontype: CREDIT
+Enter value for accountid: 1003
+old   1: INSERT INTO TRANSACTIONS VALUES(&TRANSACTIONTID, '&TDATE', &AMOUNT, '&TRANSACTIONTYPE', &ACCOUNTID)
+new   1: INSERT INTO TRANSACTIONS VALUES(5003, '7-AUG-2021', 80000, 'CREDIT', 1003)
+
+1 row created.
+
+SQL> INSERT INTO TRANSACTIONS VALUES(&TRANSACTIONTID, '&TDATE', &AMOUNT, '&TRANSACTIONTYPE', &ACCOUNTID);
+Enter value for transactiontid: 5004
+Enter value for tdate: 15-JAN-2024
+Enter value for amount: 70000
+Enter value for transactiontype: CREDIT
+Enter value for accountid: 1002
+old   1: INSERT INTO TRANSACTIONS VALUES(&TRANSACTIONTID, '&TDATE', &AMOUNT, '&TRANSACTIONTYPE', &ACCOUNTID)
+new   1: INSERT INTO TRANSACTIONS VALUES(5004, '15-JAN-2024', 70000, 'CREDIT', 1002)
+
+1 row created.
+
+SQL> SELECT * FROM TRANSACTION;
+SELECT * FROM TRANSACTION
+              *
+ERROR at line 1:
+ORA-00942: table or view does not exist 
+
+
+SQL> SELECT * FROM TRANSACTIONS;
+
+TRANSACTIONID TDATE      AMOUNT TRANSACTIONTYPE                ACCOUNTID                                                                                                                                                                                                                                                                                                                                                                                                                                            
+------------- --------- ------- ------------------------------ ---------                                                                                                                                                                                                                                                                                                                                                                                                                                            
+         5001 21-JAN-22   23000 CREDIT                              1001                                                                                                                                                                                                                                                                                                                                                                                                                                            
+         5002 22-JUN-25   50000 DEBIT                               1002                                                                                                                                                                                                                                                                                                                                                                                                                                            
+         5003 07-AUG-21   80000 CREDIT                              1003                                                                                                                                                                                                                                                                                                                                                                                                                                            
+         5004 15-JAN-24   70000 CREDIT                              1002                                                                                                                                                                                                                                                                                                                                                                                                                                            
+
+SQL> COMMIT;
+
+Commit complete.
+
+SQL> COMMIT;
+
+Commit complete.
+
+SQL> SPOOL ON;
