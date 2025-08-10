@@ -1,0 +1,671 @@
+SQL> SELECT * FROM ACCOUNTS
+  2  WHERE
+  3  BALANCE>20000;
+
+ ACCOUNTID ACCOUNTTYPE             BALANCE CUSTOMERID                                                                                                                                                   
+---------- -------------------- ---------- ----------                                                                                                                                                   
+      1001 SAVINGS                   28450          1                                                                                                                                                   
+      1002 CURRENT                 49300.9          2                                                                                                                                                   
+      1003 SAVINGS                  230000          2                                                                                                                                                   
+      1005 CURRENT                   40000          4                                                                                                                                                   
+      1006 SAVINGS                   70000          5                                                                                                                                                   
+      1007 CURRENT                   65000          6                                                                                                                                                   
+      1008 CURRENT                   78000          5                                                                                                                                                   
+      1009 SAVINGS                 4500000          7                                                                                                                                                   
+      1010 SAVINGS                  100000         10                                                                                                                                                   
+
+9 rows selected.
+
+SQL> SELECT * FROM CUSTOMERS
+  2  ORDER BY NAME DESC;
+
+CUSTOMERID NAME                             EMAIL                            PHONE                            ADDRESS                                                                                   
+---------- -------------------------------- -------------------------------- -------------------------------- --------------------------------                                                          
+         8 Rohan Kumar                      meeragupta234@gmail.com          8877654566                       7, Hill Road, Kolkata                                                                     
+         7 Rohan Kumar                      rohankumar101@gmail.com          8879055677                       212, Park Street, Bangalore                                                               
+         2 Ravi Sharma                      ravi.s111@gmail.com              9120557888                       221B, Baner Road, Pune                                                                    
+         6 Priya Patel                      priyapatel34@gmail.com           8805546677                       123, Link Road, Delhi                                                                     
+        10 Kabir Gupta                      kabirgupta34@gmail.com           7789665544                       3, Baner Road, Pune                                                                       
+         4 Jayashree Thorat                 jayashree232@gmail.com           7865449900                       32, Tilak Road, Pune                                                                      
+         9 Isha Gupta                       ishagupta123@gmail.com           7866754433                       2, park street, mumbai                                                                    
+         1 Anjali Deshmukh                  anjali.d123@gmail.com            9867452344                       14, MG Road, Pune, Maharashtra                                                            
+         3 Aarti Thorat                     aartik14@gmail.com               8805546677                       7, Katraj, Pune                                                                           
+         5 Aarav Sharma                     aaravsharma444@gmail.com         9978675544                       101, MG Road, Mumbai                                                                      
+
+10 rows selected.
+
+SQL> SELECT * FROM CUSTOMERS
+  2  ORDER BY NAME ;
+
+CUSTOMERID NAME                             EMAIL                            PHONE                            ADDRESS                                                                                   
+---------- -------------------------------- -------------------------------- -------------------------------- --------------------------------                                                          
+         5 Aarav Sharma                     aaravsharma444@gmail.com         9978675544                       101, MG Road, Mumbai                                                                      
+         3 Aarti Thorat                     aartik14@gmail.com               8805546677                       7, Katraj, Pune                                                                           
+         1 Anjali Deshmukh                  anjali.d123@gmail.com            9867452344                       14, MG Road, Pune, Maharashtra                                                            
+         9 Isha Gupta                       ishagupta123@gmail.com           7866754433                       2, park street, mumbai                                                                    
+         4 Jayashree Thorat                 jayashree232@gmail.com           7865449900                       32, Tilak Road, Pune                                                                      
+        10 Kabir Gupta                      kabirgupta34@gmail.com           7789665544                       3, Baner Road, Pune                                                                       
+         6 Priya Patel                      priyapatel34@gmail.com           8805546677                       123, Link Road, Delhi                                                                     
+         2 Ravi Sharma                      ravi.s111@gmail.com              9120557888                       221B, Baner Road, Pune                                                                    
+         8 Rohan Kumar                      meeragupta234@gmail.com          8877654566                       7, Hill Road, Kolkata                                                                     
+         7 Rohan Kumar                      rohankumar101@gmail.com          8879055677                       212, Park Street, Bangalore                                                               
+
+10 rows selected.
+
+SQL> SELECT NAME, PHONE FROM CUSTOMERS
+  2  ORDER BY CUSTOMERID;
+
+NAME                             PHONE                                                                                                                                                                  
+-------------------------------- --------------------------------                                                                                                                                       
+Anjali Deshmukh                  9867452344                                                                                                                                                             
+Ravi Sharma                      9120557888                                                                                                                                                             
+Aarti Thorat                     8805546677                                                                                                                                                             
+Jayashree Thorat                 7865449900                                                                                                                                                             
+Aarav Sharma                     9978675544                                                                                                                                                             
+Priya Patel                      8805546677                                                                                                                                                             
+Rohan Kumar                      8879055677                                                                                                                                                             
+Rohan Kumar                      8877654566                                                                                                                                                             
+Isha Gupta                       7866754433                                                                                                                                                             
+Kabir Gupta                      7789665544                                                                                                                                                             
+
+10 rows selected.
+
+SQL> SELECT * FROM CUSTOMERS
+  2  WHERE
+  3  LIKE '-----';
+LIKE '-----'
+*
+ERROR at line 3:
+ORA-00936: missing expression 
+
+
+SQL> SELECT * FROM CUSTOMERS
+  2  WHERE
+  3  LIKE NAME '-----';
+LIKE NAME '-----'
+*
+ERROR at line 3:
+ORA-00936: missing expression 
+
+
+SQL> SELECT * FROM CUSTOMERS
+  2  WHERE
+  3  NAME LIKE '-----';
+
+no rows selected
+
+SQL> ED
+Wrote file afiedt.buf
+
+  1  SELECT * FROM CUSTOMERS
+  2  WHERE
+  3* NAME LIKE '----------'
+SQL> /
+
+no rows selected
+
+SQL> ED
+Wrote file afiedt.buf
+
+  1  SELECT * FROM CUSTOMERS
+  2  WHERE
+  3* NAME LIKE '__________'
+SQL> /
+
+CUSTOMERID NAME                             EMAIL                            PHONE                            ADDRESS                                                                                   
+---------- -------------------------------- -------------------------------- -------------------------------- --------------------------------                                                          
+         9 Isha Gupta                       ishagupta123@gmail.com           7866754433                       2, park street, mumbai                                                                    
+
+SQL> SELECT * FROM TRANSACTION
+  2  WHERE
+  3  TRANSACTIONID IN(5001, 5002, 5003, 5010);
+SELECT * FROM TRANSACTION
+              *
+ERROR at line 1:
+ORA-00942: table or view does not exist 
+
+
+SQL> ED
+Wrote file afiedt.buf
+
+  1  SELECT * FROM TRANSACTIONS
+  2  WHERE
+  3* TRANSACTIONID IN(5001, 5002, 5003, 5010)
+SQL> /
+
+TRANSACTIONID TDATE         AMOUNT TRANSACTIONTYPE       ACCOUNTID                                                                                                                                      
+------------- --------- ---------- -------------------- ----------                                                                                                                                      
+         5001 21-JAN-22      23000 CREDIT                     1001                                                                                                                                      
+         5002 22-JUN-25      50000 DEBIT                      1002                                                                                                                                      
+         5003 07-AUG-21      80000 CREDIT                     1003                                                                                                                                      
+         5010 08-JAN-04      45000 DEBIT                      1010                                                                                                                                      
+
+SQL> ED
+Wrote file afiedt.buf
+
+  1  SELECT * FROM TRANSACTIONS
+  2  WHERE
+  3* TRANSACTIONID NOT IN(5001, 5002, 5003, 5010)
+SQL> /
+
+TRANSACTIONID TDATE         AMOUNT TRANSACTIONTYPE       ACCOUNTID                                                                                                                                      
+------------- --------- ---------- -------------------- ----------                                                                                                                                      
+         5004 15-JAN-24      70000 CREDIT                     1002                                                                                                                                      
+         5005 22-JAN-22      89000 CREDIT                     1009                                                                                                                                      
+         5006 06-JAN-22      65000 DEBIT                      1008                                                                                                                                      
+         5007 15-AUG-23      80000 DEBIT                      1007                                                                                                                                      
+         5008 04-AUG-20      45000 CREDIT                     1006                                                                                                                                      
+         5009 05-JUL-13      35000 DEBIT                      1005                                                                                                                                      
+
+6 rows selected.
+
+SQL> SELECT * FROM ACCOUNTS;
+
+ ACCOUNTID ACCOUNTTYPE             BALANCE CUSTOMERID                                                                                                                                                   
+---------- -------------------- ---------- ----------                                                                                                                                                   
+      1001 SAVINGS                   28450          1                                                                                                                                                   
+      1002 CURRENT                 49300.9          2                                                                                                                                                   
+      1003 SAVINGS                  230000          2                                                                                                                                                   
+      1004 CURRENT                                  3                                                                                                                                                   
+      1005 CURRENT                   40000          4                                                                                                                                                   
+      1006 SAVINGS                   70000          5                                                                                                                                                   
+      1007 CURRENT                   65000          6                                                                                                                                                   
+      1008 CURRENT                   78000          5                                                                                                                                                   
+      1009 SAVINGS                 4500000          7                                                                                                                                                   
+      1010 SAVINGS                  100000         10                                                                                                                                                   
+
+10 rows selected.
+
+SQL> SELECT * FROM ACCOUNTS
+  2  WHERE
+  3  ACCOUNTID=1001 AND ACCOUNTTYPE='SAVINGS';
+
+ ACCOUNTID ACCOUNTTYPE             BALANCE CUSTOMERID                                                                                                                                                   
+---------- -------------------- ---------- ----------                                                                                                                                                   
+      1001 SAVINGS                   28450          1                                                                                                                                                   
+
+SQL> ED
+Wrote file afiedt.buf
+
+  1  SELECT * FROM ACCOUNTS
+  2  WHERE
+  3* ACCOUNTID=1001 OR ACCOUNTTYPE='SAVINGS'
+SQL> /
+
+ ACCOUNTID ACCOUNTTYPE             BALANCE CUSTOMERID                                                                                                                                                   
+---------- -------------------- ---------- ----------                                                                                                                                                   
+      1001 SAVINGS                   28450          1                                                                                                                                                   
+      1003 SAVINGS                  230000          2                                                                                                                                                   
+      1006 SAVINGS                   70000          5                                                                                                                                                   
+      1009 SAVINGS                 4500000          7                                                                                                                                                   
+      1010 SAVINGS                  100000         10                                                                                                                                                   
+
+SQL> ED
+Wrote file afiedt.buf
+
+  1  SELECT * FROM ACCOUNTS
+  2  WHERE
+  3* ACCOUNTTYPE!='SAVINGS'
+SQL> /
+
+ ACCOUNTID ACCOUNTTYPE             BALANCE CUSTOMERID                                                                                                                                                   
+---------- -------------------- ---------- ----------                                                                                                                                                   
+      1002 CURRENT                 49300.9          2                                                                                                                                                   
+      1004 CURRENT                                  3                                                                                                                                                   
+      1005 CURRENT                   40000          4                                                                                                                                                   
+      1007 CURRENT                   65000          6                                                                                                                                                   
+      1008 CURRENT                   78000          5                                                                                                                                                   
+
+SQL> SELECT * FROM ACCOUNTS
+  2  GROUP BY ACCOUNTID;
+SELECT * FROM ACCOUNTS
+       *
+ERROR at line 1:
+ORA-00979: not a GROUP BY expression 
+
+
+SQL> ED
+Wrote file afiedt.buf
+
+  1  SELECT ACCOUNTTYPE FROM ACCOUNTS
+  2* GROUP BY ACCOUNTTYPE
+SQL> /
+
+ACCOUNTTYPE                                                                                                                                                                                             
+--------------------                                                                                                                                                                                    
+SAVINGS                                                                                                                                                                                                 
+CURRENT                                                                                                                                                                                                 
+
+SQL> ED
+Wrote file afiedt.buf
+
+  1  SELECT ACCOUNTTYPE, COUNT(*) FROM ACCOUNTS
+  2* GROUP BY ACCOUNTTYPE
+SQL> /
+
+ACCOUNTTYPE            COUNT(*)                                                                                                                                                                         
+-------------------- ----------                                                                                                                                                                         
+SAVINGS                       5                                                                                                                                                                         
+CURRENT                       5                                                                                                                                                                         
+
+SQL> ED
+Wrote file afiedt.buf
+
+  1  SELECT ACCOUNTTYPE, COUNT(*), SUM(BALANCE) FROM ACCOUNTS
+  2* GROUP BY ACCOUNTTYPE
+SQL> /
+
+ACCOUNTTYPE            COUNT(*) SUM(BALANCE)                                                                                                                                                            
+-------------------- ---------- ------------                                                                                                                                                            
+SAVINGS                       5      4928450                                                                                                                                                            
+CURRENT                       5     232300.9                                                                                                                                                            
+
+SQL> ED
+Wrote file afiedt.buf
+
+  1  SELECT ACCOUNTTYPE, BALANCE, COUNT(*), SUM(BALANCE) FROM ACCOUNTS
+  2* GROUP BY ACCOUNTTYPE
+SQL> /
+SELECT ACCOUNTTYPE, BALANCE, COUNT(*), SUM(BALANCE) FROM ACCOUNTS
+                    *
+ERROR at line 1:
+ORA-00979: not a GROUP BY expression 
+
+
+SQL> ED
+Wrote file afiedt.buf
+
+  1  SELECT ACCOUNTTYPE, BALANCE, COUNT(*), SUM(BALANCE) FROM ACCOUNTS
+  2* GROUP BY ACCOUNTTYPE, BALANCE
+SQL> /
+
+ACCOUNTTYPE             BALANCE   COUNT(*) SUM(BALANCE)                                                                                                                                                 
+-------------------- ---------- ---------- ------------                                                                                                                                                 
+SAVINGS                   70000          1        70000                                                                                                                                                 
+CURRENT                 49300.9          1      49300.9                                                                                                                                                 
+CURRENT                   65000          1        65000                                                                                                                                                 
+SAVINGS                 4500000          1      4500000                                                                                                                                                 
+CURRENT                                  1                                                                                                                                                              
+CURRENT                   40000          1        40000                                                                                                                                                 
+SAVINGS                  230000          1       230000                                                                                                                                                 
+CURRENT                   78000          1        78000                                                                                                                                                 
+SAVINGS                  100000          1       100000                                                                                                                                                 
+SAVINGS                   28450          1        28450                                                                                                                                                 
+
+10 rows selected.
+
+SQL> SELECT ACCOUNTTYPE, BALANCE FROM ACCOUNTS
+  2  WHERE BALANCE=70000
+  3  GROUP BY BALANCE, ACCOUNTTYPE;
+
+ACCOUNTTYPE             BALANCE                                                                                                                                                                         
+-------------------- ----------                                                                                                                                                                         
+SAVINGS                   70000                                                                                                                                                                         
+
+SQL> ED
+Wrote file afiedt.buf
+
+  1  SELECT ACCOUNTTYPE, SUM(BALANCE) FROM ACCOUNTS
+  2  WHERE SUM(BALANCE) > 70000
+  3* GROUP BY BALANCE, ACCOUNTTYPE
+SQL> /
+WHERE SUM(BALANCE) > 70000
+      *
+ERROR at line 2:
+ORA-00934: group function is not allowed here 
+
+
+SQL> ED
+Wrote file afiedt.buf
+
+  1  SELECT ACCOUNTTYPE, SUM(BALANCE) FROM ACCOUNTS
+  2  HAVING SUM(BALANCE) > 70000
+  3* GROUP BY BALANCE, ACCOUNTTYPE
+SQL> /
+
+ACCOUNTTYPE          SUM(BALANCE)                                                                                                                                                                       
+-------------------- ------------                                                                                                                                                                       
+SAVINGS                    230000                                                                                                                                                                       
+SAVINGS                    100000                                                                                                                                                                       
+CURRENT                     78000                                                                                                                                                                       
+SAVINGS                   4500000                                                                                                                                                                       
+
+SQL> ED
+Wrote file afiedt.buf
+
+  1  SELECT ACCOUNTTYPE, SUM(BALANCE) FROM ACCOUNTS
+  2  GROUP BY BALANCE, ACCOUNTTYPE
+  3* HAVING SUM(BALANCE) > 70000
+  4  /
+
+ACCOUNTTYPE          SUM(BALANCE)                                                                                                                                                                       
+-------------------- ------------                                                                                                                                                                       
+SAVINGS                    230000                                                                                                                                                                       
+SAVINGS                    100000                                                                                                                                                                       
+CURRENT                     78000                                                                                                                                                                       
+SAVINGS                   4500000                                                                                                                                                                       
+
+SQL> SELECT * FROM ACCOUNTS
+  2  ORDER BY BALANCE;
+
+ ACCOUNTID ACCOUNTTYPE             BALANCE CUSTOMERID                                                                                                                                                   
+---------- -------------------- ---------- ----------                                                                                                                                                   
+      1001 SAVINGS                   28450          1                                                                                                                                                   
+      1005 CURRENT                   40000          4                                                                                                                                                   
+      1002 CURRENT                 49300.9          2                                                                                                                                                   
+      1007 CURRENT                   65000          6                                                                                                                                                   
+      1006 SAVINGS                   70000          5                                                                                                                                                   
+      1008 CURRENT                   78000          5                                                                                                                                                   
+      1010 SAVINGS                  100000         10                                                                                                                                                   
+      1003 SAVINGS                  230000          2                                                                                                                                                   
+      1009 SAVINGS                 4500000          7                                                                                                                                                   
+      1004 CURRENT                                  3                                                                                                                                                   
+
+10 rows selected.
+
+SQL> ED
+Wrote file afiedt.buf
+
+  1  SELECT * FROM ACCOUNTS
+  2* ORDER BY BALANCE DESC 
+SQL> /
+
+ ACCOUNTID ACCOUNTTYPE             BALANCE CUSTOMERID                                                                                                                                                   
+---------- -------------------- ---------- ----------                                                                                                                                                   
+      1004 CURRENT                                  3                                                                                                                                                   
+      1009 SAVINGS                 4500000          7                                                                                                                                                   
+      1003 SAVINGS                  230000          2                                                                                                                                                   
+      1010 SAVINGS                  100000         10                                                                                                                                                   
+      1008 CURRENT                   78000          5                                                                                                                                                   
+      1006 SAVINGS                   70000          5                                                                                                                                                   
+      1007 CURRENT                   65000          6                                                                                                                                                   
+      1002 CURRENT                 49300.9          2                                                                                                                                                   
+      1005 CURRENT                   40000          4                                                                                                                                                   
+      1001 SAVINGS                   28450          1                                                                                                                                                   
+
+10 rows selected.
+
+SQL> ED
+Wrote file afiedt.buf
+
+  1  SELECT * FROM ACCOUNTS
+  2* ORDER BY BALANCE ASC NULLS FIRST
+SQL> /
+
+ ACCOUNTID ACCOUNTTYPE             BALANCE CUSTOMERID                                                                                                                                                   
+---------- -------------------- ---------- ----------                                                                                                                                                   
+      1004 CURRENT                                  3                                                                                                                                                   
+      1001 SAVINGS                   28450          1                                                                                                                                                   
+      1005 CURRENT                   40000          4                                                                                                                                                   
+      1002 CURRENT                 49300.9          2                                                                                                                                                   
+      1007 CURRENT                   65000          6                                                                                                                                                   
+      1006 SAVINGS                   70000          5                                                                                                                                                   
+      1008 CURRENT                   78000          5                                                                                                                                                   
+      1010 SAVINGS                  100000         10                                                                                                                                                   
+      1003 SAVINGS                  230000          2                                                                                                                                                   
+      1009 SAVINGS                 4500000          7                                                                                                                                                   
+
+10 rows selected.
+
+SQL> ED
+Wrote file afiedt.buf
+
+  1  SELECT * FROM ACCOUNTS
+  2* ORDER BY BALANCE DESC NULLS FIRST
+SQL> /
+
+ ACCOUNTID ACCOUNTTYPE             BALANCE CUSTOMERID                                                                                                                                                   
+---------- -------------------- ---------- ----------                                                                                                                                                   
+      1004 CURRENT                                  3                                                                                                                                                   
+      1009 SAVINGS                 4500000          7                                                                                                                                                   
+      1003 SAVINGS                  230000          2                                                                                                                                                   
+      1010 SAVINGS                  100000         10                                                                                                                                                   
+      1008 CURRENT                   78000          5                                                                                                                                                   
+      1006 SAVINGS                   70000          5                                                                                                                                                   
+      1007 CURRENT                   65000          6                                                                                                                                                   
+      1002 CURRENT                 49300.9          2                                                                                                                                                   
+      1005 CURRENT                   40000          4                                                                                                                                                   
+      1001 SAVINGS                   28450          1                                                                                                                                                   
+
+10 rows selected.
+
+SQL> ED
+Wrote file afiedt.buf
+
+  1  SELECT * FROM ACCOUNTS
+  2* ORDER BY BALANCE DESC NULLS LAST
+SQL> /
+
+ ACCOUNTID ACCOUNTTYPE             BALANCE CUSTOMERID                                                                                                                                                   
+---------- -------------------- ---------- ----------                                                                                                                                                   
+      1009 SAVINGS                 4500000          7                                                                                                                                                   
+      1003 SAVINGS                  230000          2                                                                                                                                                   
+      1010 SAVINGS                  100000         10                                                                                                                                                   
+      1008 CURRENT                   78000          5                                                                                                                                                   
+      1006 SAVINGS                   70000          5                                                                                                                                                   
+      1007 CURRENT                   65000          6                                                                                                                                                   
+      1002 CURRENT                 49300.9          2                                                                                                                                                   
+      1005 CURRENT                   40000          4                                                                                                                                                   
+      1001 SAVINGS                   28450          1                                                                                                                                                   
+      1004 CURRENT                                  3                                                                                                                                                   
+
+10 rows selected.
+
+SQL> SELECT * FROM CUSTOMERS
+  2  ORDER BY NAME ASC, CUSTOMETID DESC;
+ORDER BY NAME ASC, CUSTOMETID DESC
+                   *
+ERROR at line 2:
+ORA-00904: "CUSTOMETID": invalid identifier 
+
+
+SQL> ED
+Wrote file afiedt.buf
+
+  1  SELECT * FROM CUSTOMERS
+  2* ORDER BY NAME ASC, CUSTOMERID DESC
+SQL> /
+
+CUSTOMERID NAME                             EMAIL                            PHONE                            ADDRESS                                                                                   
+---------- -------------------------------- -------------------------------- -------------------------------- --------------------------------                                                          
+         5 Aarav Sharma                     aaravsharma444@gmail.com         9978675544                       101, MG Road, Mumbai                                                                      
+         3 Aarti Thorat                     aartik14@gmail.com               8805546677                       7, Katraj, Pune                                                                           
+         1 Anjali Deshmukh                  anjali.d123@gmail.com            9867452344                       14, MG Road, Pune, Maharashtra                                                            
+         9 Isha Gupta                       ishagupta123@gmail.com           7866754433                       2, park street, mumbai                                                                    
+         4 Jayashree Thorat                 jayashree232@gmail.com           7865449900                       32, Tilak Road, Pune                                                                      
+        10 Kabir Gupta                      kabirgupta34@gmail.com           7789665544                       3, Baner Road, Pune                                                                       
+         6 Priya Patel                      priyapatel34@gmail.com           8805546677                       123, Link Road, Delhi                                                                     
+         2 Ravi Sharma                      ravi.s111@gmail.com              9120557888                       221B, Baner Road, Pune                                                                    
+         8 Rohan Kumar                      meeragupta234@gmail.com          8877654566                       7, Hill Road, Kolkata                                                                     
+         7 Rohan Kumar                      rohankumar101@gmail.com          8879055677                       212, Park Street, Bangalore                                                               
+
+10 rows selected.
+
+SQL> SELECT * FROM CUSTOMERS
+  2  WHERE NAME='Rohan'
+  3  ORDER BY CUSTOMERID;
+
+no rows selected
+
+SQL> ED
+Wrote file afiedt.buf
+
+  1  SELECT NAME FROM CUSTOMERS
+  2  WHERE NAME='Rohan'
+  3* ORDER BY CUSTOMERID
+SQL> /
+
+no rows selected
+
+SQL> ED
+Wrote file afiedt.buf
+
+  1  SELECT * FROM ACCOUNTS
+  2  WHERE BALANCE>20000
+  3* ORDER BY BALANCE
+SQL> /
+
+ ACCOUNTID ACCOUNTTYPE             BALANCE CUSTOMERID                                                                                                                                                   
+---------- -------------------- ---------- ----------                                                                                                                                                   
+      1001 SAVINGS                   28450          1                                                                                                                                                   
+      1005 CURRENT                   40000          4                                                                                                                                                   
+      1002 CURRENT                 49300.9          2                                                                                                                                                   
+      1007 CURRENT                   65000          6                                                                                                                                                   
+      1006 SAVINGS                   70000          5                                                                                                                                                   
+      1008 CURRENT                   78000          5                                                                                                                                                   
+      1010 SAVINGS                  100000         10                                                                                                                                                   
+      1003 SAVINGS                  230000          2                                                                                                                                                   
+      1009 SAVINGS                 4500000          7                                                                                                                                                   
+
+9 rows selected.
+
+SQL> SELECT * FROM CUSTOMERS
+  2  WHERE
+  3  CUSTOMERID BETWEEN 1 AND 5
+  4  ORDER BY CUSTOMERID;
+
+CUSTOMERID NAME                             EMAIL                            PHONE                            ADDRESS                                                                                   
+---------- -------------------------------- -------------------------------- -------------------------------- --------------------------------                                                          
+         1 Anjali Deshmukh                  anjali.d123@gmail.com            9867452344                       14, MG Road, Pune, Maharashtra                                                            
+         2 Ravi Sharma                      ravi.s111@gmail.com              9120557888                       221B, Baner Road, Pune                                                                    
+         3 Aarti Thorat                     aartik14@gmail.com               8805546677                       7, Katraj, Pune                                                                           
+         4 Jayashree Thorat                 jayashree232@gmail.com           7865449900                       32, Tilak Road, Pune                                                                      
+         5 Aarav Sharma                     aaravsharma444@gmail.com         9978675544                       101, MG Road, Mumbai                                                                      
+
+SQL> ED
+Wrote file afiedt.buf
+
+  1  SELECT * FROM CUSTOMERS
+  2  WHERE
+  3  CUSTOMERID NOT BETWEEN 1 AND 5
+  4* ORDER BY CUSTOMERID
+SQL> /
+
+CUSTOMERID NAME                             EMAIL                            PHONE                            ADDRESS                                                                                   
+---------- -------------------------------- -------------------------------- -------------------------------- --------------------------------                                                          
+         6 Priya Patel                      priyapatel34@gmail.com           8805546677                       123, Link Road, Delhi                                                                     
+         7 Rohan Kumar                      rohankumar101@gmail.com          8879055677                       212, Park Street, Bangalore                                                               
+         8 Rohan Kumar                      meeragupta234@gmail.com          8877654566                       7, Hill Road, Kolkata                                                                     
+         9 Isha Gupta                       ishagupta123@gmail.com           7866754433                       2, park street, mumbai                                                                    
+        10 Kabir Gupta                      kabirgupta34@gmail.com           7789665544                       3, Baner Road, Pune                                                                       
+
+SQL> SELECT * FROM TRANSACTIONS;
+
+TRANSACTIONID TDATE         AMOUNT TRANSACTIONTYPE       ACCOUNTID                                                                                                                                      
+------------- --------- ---------- -------------------- ----------                                                                                                                                      
+         5001 21-JAN-22      23000 CREDIT                     1001                                                                                                                                      
+         5002 22-JUN-25      50000 DEBIT                      1002                                                                                                                                      
+         5003 07-AUG-21      80000 CREDIT                     1003                                                                                                                                      
+         5004 15-JAN-24      70000 CREDIT                     1002                                                                                                                                      
+         5005 22-JAN-22      89000 CREDIT                     1009                                                                                                                                      
+         5006 06-JAN-22      65000 DEBIT                      1008                                                                                                                                      
+         5007 15-AUG-23      80000 DEBIT                      1007                                                                                                                                      
+         5008 04-AUG-20      45000 CREDIT                     1006                                                                                                                                      
+         5009 05-JUL-13      35000 DEBIT                      1005                                                                                                                                      
+         5010 08-JAN-04      45000 DEBIT                      1010                                                                                                                                      
+
+10 rows selected.
+
+SQL> SELECT TRANSACTIONTYPE FROM TRANSACTIONS
+  2  GROUP BY TRANSACTIONTYPE
+  3  ORDER BY TRANSACTIONTYPE;
+
+TRANSACTIONTYPE                                                                                                                                                                                         
+--------------------                                                                                                                                                                                    
+CREDIT                                                                                                                                                                                                  
+DEBIT                                                                                                                                                                                                   
+
+SQL> ED
+Wrote file afiedt.buf
+
+  1  SELECT TRANSACTIONTYPE, COUNT(*) FROM TRANSACTIONS
+  2  GROUP BY TRANSACTIONTYPE
+  3* ORDER BY TRANSACTIONTYPE
+SQL> /
+
+TRANSACTIONTYPE        COUNT(*)                                                                                                                                                                         
+-------------------- ----------                                                                                                                                                                         
+CREDIT                        5                                                                                                                                                                         
+DEBIT                         5                                                                                                                                                                         
+
+SQL> SELECT COUNT(BALANCE) FROM ACCOUNTS;
+
+COUNT(BALANCE)                                                                                                                                                                                          
+--------------                                                                                                                                                                                          
+             9                                                                                                                                                                                          
+
+SQL> ED
+Wrote file afiedt.buf
+
+  1* SELECT COUNT(*) FROM ACCOUNTS
+SQL> /
+
+  COUNT(*)                                                                                                                                                                                              
+----------                                                                                                                                                                                              
+        10                                                                                                                                                                                              
+
+SQL> SELECT DISTINCT BALANCE FROM ACCOUNTS;
+
+   BALANCE                                                                                                                                                                                              
+----------                                                                                                                                                                                              
+                                                                                                                                                                                                        
+    100000                                                                                                                                                                                              
+     28450                                                                                                                                                                                              
+   49300.9                                                                                                                                                                                              
+    230000                                                                                                                                                                                              
+     40000                                                                                                                                                                                              
+   4500000                                                                                                                                                                                              
+     65000                                                                                                                                                                                              
+     70000                                                                                                                                                                                              
+     78000                                                                                                                                                                                              
+
+10 rows selected.
+
+SQL> ED
+Wrote file afiedt.buf
+
+  1* SELECT UNIQUE BALANCE FROM ACCOUNTS
+SQL> /
+
+   BALANCE                                                                                                                                                                                              
+----------                                                                                                                                                                                              
+                                                                                                                                                                                                        
+    100000                                                                                                                                                                                              
+     28450                                                                                                                                                                                              
+   49300.9                                                                                                                                                                                              
+    230000                                                                                                                                                                                              
+     40000                                                                                                                                                                                              
+   4500000                                                                                                                                                                                              
+     65000                                                                                                                                                                                              
+     70000                                                                                                                                                                                              
+     78000                                                                                                                                                                                              
+
+10 rows selected.
+
+SQL> ED
+Wrote file afiedt.buf
+
+  1  SELECT UNIQUE BALANCE FROM ACCOUNTS
+  2* ORDER BY BALANCE
+SQL> /
+
+   BALANCE                                                                                                                                                                                              
+----------                                                                                                                                                                                              
+     28450                                                                                                                                                                                              
+     40000                                                                                                                                                                                              
+   49300.9                                                                                                                                                                                              
+     65000                                                                                                                                                                                              
+     70000                                                                                                                                                                                              
+     78000                                                                                                                                                                                              
+    100000                                                                                                                                                                                              
+    230000                                                                                                                                                                                              
+   4500000                                                                                                                                                                                              
+                                                                                                                                                                                                        
+
+10 rows selected.
+
+SQL> COMMIT;
+
+Commit complete.
+
+SQL> SPOOL ON;
