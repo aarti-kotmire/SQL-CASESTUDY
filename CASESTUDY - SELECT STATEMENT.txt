@@ -1,0 +1,1249 @@
+SQL> select * from customers;
+
+CUSTOMERID                                                                      
+----------                                                                      
+NAME                                                                            
+--------------------------------------------------------------------------------
+EMAIL                                                                           
+--------------------------------------------------------------------------------
+PHONE                                                                           
+---------------                                                                 
+ADDRESS                                                                         
+--------------------------------------------------------------------------------
+         1                                                                      
+Anjali Deshmukh                                                                 
+anjali.d123@gmail.com                                                           
+
+CUSTOMERID                                                                      
+----------                                                                      
+NAME                                                                            
+--------------------------------------------------------------------------------
+EMAIL                                                                           
+--------------------------------------------------------------------------------
+PHONE                                                                           
+---------------                                                                 
+ADDRESS                                                                         
+--------------------------------------------------------------------------------
+9867452344                                                                      
+14, MG Road, Pune, Maharashtra                                                  
+                                                                                
+
+CUSTOMERID                                                                      
+----------                                                                      
+NAME                                                                            
+--------------------------------------------------------------------------------
+EMAIL                                                                           
+--------------------------------------------------------------------------------
+PHONE                                                                           
+---------------                                                                 
+ADDRESS                                                                         
+--------------------------------------------------------------------------------
+         2                                                                      
+Ravi Sharma                                                                     
+ravi.s111@gmail.com                                                             
+
+CUSTOMERID                                                                      
+----------                                                                      
+NAME                                                                            
+--------------------------------------------------------------------------------
+EMAIL                                                                           
+--------------------------------------------------------------------------------
+PHONE                                                                           
+---------------                                                                 
+ADDRESS                                                                         
+--------------------------------------------------------------------------------
+9120557888                                                                      
+221B, Baner Road, Pune                                                          
+                                                                                
+
+CUSTOMERID                                                                      
+----------                                                                      
+NAME                                                                            
+--------------------------------------------------------------------------------
+EMAIL                                                                           
+--------------------------------------------------------------------------------
+PHONE                                                                           
+---------------                                                                 
+ADDRESS                                                                         
+--------------------------------------------------------------------------------
+         3                                                                      
+Aarti Thorat                                                                    
+aartik14@gmail.com                                                              
+
+CUSTOMERID                                                                      
+----------                                                                      
+NAME                                                                            
+--------------------------------------------------------------------------------
+EMAIL                                                                           
+--------------------------------------------------------------------------------
+PHONE                                                                           
+---------------                                                                 
+ADDRESS                                                                         
+--------------------------------------------------------------------------------
+8805546677                                                                      
+7, Katraj, Pune                                                                 
+                                                                                
+
+CUSTOMERID                                                                      
+----------                                                                      
+NAME                                                                            
+--------------------------------------------------------------------------------
+EMAIL                                                                           
+--------------------------------------------------------------------------------
+PHONE                                                                           
+---------------                                                                 
+ADDRESS                                                                         
+--------------------------------------------------------------------------------
+         4                                                                      
+Jayashree Thorat                                                                
+jayashree232@gmail.com                                                          
+
+CUSTOMERID                                                                      
+----------                                                                      
+NAME                                                                            
+--------------------------------------------------------------------------------
+EMAIL                                                                           
+--------------------------------------------------------------------------------
+PHONE                                                                           
+---------------                                                                 
+ADDRESS                                                                         
+--------------------------------------------------------------------------------
+7865449900                                                                      
+32, Tilak Road, Pune                                                            
+                                                                                
+
+CUSTOMERID                                                                      
+----------                                                                      
+NAME                                                                            
+--------------------------------------------------------------------------------
+EMAIL                                                                           
+--------------------------------------------------------------------------------
+PHONE                                                                           
+---------------                                                                 
+ADDRESS                                                                         
+--------------------------------------------------------------------------------
+         5                                                                      
+Aarav Sharma                                                                    
+aaravsharma444@gmail.com                                                        
+
+CUSTOMERID                                                                      
+----------                                                                      
+NAME                                                                            
+--------------------------------------------------------------------------------
+EMAIL                                                                           
+--------------------------------------------------------------------------------
+PHONE                                                                           
+---------------                                                                 
+ADDRESS                                                                         
+--------------------------------------------------------------------------------
+9978675544                                                                      
+101, MG Road, Mumbai                                                            
+                                                                                
+
+CUSTOMERID                                                                      
+----------                                                                      
+NAME                                                                            
+--------------------------------------------------------------------------------
+EMAIL                                                                           
+--------------------------------------------------------------------------------
+PHONE                                                                           
+---------------                                                                 
+ADDRESS                                                                         
+--------------------------------------------------------------------------------
+         6                                                                      
+Priya Patel                                                                     
+priyapatel34@gmail.com                                                          
+
+CUSTOMERID                                                                      
+----------                                                                      
+NAME                                                                            
+--------------------------------------------------------------------------------
+EMAIL                                                                           
+--------------------------------------------------------------------------------
+PHONE                                                                           
+---------------                                                                 
+ADDRESS                                                                         
+--------------------------------------------------------------------------------
+8805546677                                                                      
+123, Link Road, Delhi                                                           
+                                                                                
+
+CUSTOMERID                                                                      
+----------                                                                      
+NAME                                                                            
+--------------------------------------------------------------------------------
+EMAIL                                                                           
+--------------------------------------------------------------------------------
+PHONE                                                                           
+---------------                                                                 
+ADDRESS                                                                         
+--------------------------------------------------------------------------------
+         7                                                                      
+Rohan Kumar                                                                     
+rohankumar101@gmail.com                                                         
+
+CUSTOMERID                                                                      
+----------                                                                      
+NAME                                                                            
+--------------------------------------------------------------------------------
+EMAIL                                                                           
+--------------------------------------------------------------------------------
+PHONE                                                                           
+---------------                                                                 
+ADDRESS                                                                         
+--------------------------------------------------------------------------------
+8879055677                                                                      
+212, Park Street, Bangalore                                                     
+                                                                                
+
+CUSTOMERID                                                                      
+----------                                                                      
+NAME                                                                            
+--------------------------------------------------------------------------------
+EMAIL                                                                           
+--------------------------------------------------------------------------------
+PHONE                                                                           
+---------------                                                                 
+ADDRESS                                                                         
+--------------------------------------------------------------------------------
+         8                                                                      
+Rohan Kumar                                                                     
+meeragupta234@gmail.com                                                         
+
+CUSTOMERID                                                                      
+----------                                                                      
+NAME                                                                            
+--------------------------------------------------------------------------------
+EMAIL                                                                           
+--------------------------------------------------------------------------------
+PHONE                                                                           
+---------------                                                                 
+ADDRESS                                                                         
+--------------------------------------------------------------------------------
+8877654566                                                                      
+7, Hill Road, Kolkata                                                           
+                                                                                
+
+CUSTOMERID                                                                      
+----------                                                                      
+NAME                                                                            
+--------------------------------------------------------------------------------
+EMAIL                                                                           
+--------------------------------------------------------------------------------
+PHONE                                                                           
+---------------                                                                 
+ADDRESS                                                                         
+--------------------------------------------------------------------------------
+         9                                                                      
+Isha Gupta                                                                      
+ishagupta123@gmail.com                                                          
+
+CUSTOMERID                                                                      
+----------                                                                      
+NAME                                                                            
+--------------------------------------------------------------------------------
+EMAIL                                                                           
+--------------------------------------------------------------------------------
+PHONE                                                                           
+---------------                                                                 
+ADDRESS                                                                         
+--------------------------------------------------------------------------------
+7866754433                                                                      
+2, park street, mumbai                                                          
+                                                                                
+
+CUSTOMERID                                                                      
+----------                                                                      
+NAME                                                                            
+--------------------------------------------------------------------------------
+EMAIL                                                                           
+--------------------------------------------------------------------------------
+PHONE                                                                           
+---------------                                                                 
+ADDRESS                                                                         
+--------------------------------------------------------------------------------
+        10                                                                      
+Kabir Gupta                                                                     
+kabirgupta34@gmail.com                                                          
+
+CUSTOMERID                                                                      
+----------                                                                      
+NAME                                                                            
+--------------------------------------------------------------------------------
+EMAIL                                                                           
+--------------------------------------------------------------------------------
+PHONE                                                                           
+---------------                                                                 
+ADDRESS                                                                         
+--------------------------------------------------------------------------------
+7789665544                                                                      
+3, Baner Road, Pune                                                             
+                                                                                
+
+10 rows selected.
+
+SQL> column customerid format 99999
+SQL> column name format A32
+SQL> column EMAIL format A32
+SQL> column ADDRESS format A32
+SQL> column PHONE format A32
+SQL> select * from customers;
+
+CUSTOMERID NAME                             EMAIL                               
+---------- -------------------------------- --------------------------------    
+PHONE                            ADDRESS                                        
+-------------------------------- --------------------------------               
+         1 Anjali Deshmukh                  anjali.d123@gmail.com               
+9867452344                       14, MG Road, Pune, Maharashtra                 
+                                                                                
+         2 Ravi Sharma                      ravi.s111@gmail.com                 
+9120557888                       221B, Baner Road, Pune                         
+                                                                                
+         3 Aarti Thorat                     aartik14@gmail.com                  
+8805546677                       7, Katraj, Pune                                
+                                                                                
+
+CUSTOMERID NAME                             EMAIL                               
+---------- -------------------------------- --------------------------------    
+PHONE                            ADDRESS                                        
+-------------------------------- --------------------------------               
+         4 Jayashree Thorat                 jayashree232@gmail.com              
+7865449900                       32, Tilak Road, Pune                           
+                                                                                
+         5 Aarav Sharma                     aaravsharma444@gmail.com            
+9978675544                       101, MG Road, Mumbai                           
+                                                                                
+         6 Priya Patel                      priyapatel34@gmail.com              
+8805546677                       123, Link Road, Delhi                          
+                                                                                
+
+CUSTOMERID NAME                             EMAIL                               
+---------- -------------------------------- --------------------------------    
+PHONE                            ADDRESS                                        
+-------------------------------- --------------------------------               
+         7 Rohan Kumar                      rohankumar101@gmail.com             
+8879055677                       212, Park Street, Bangalore                    
+                                                                                
+         8 Rohan Kumar                      meeragupta234@gmail.com             
+8877654566                       7, Hill Road, Kolkata                          
+                                                                                
+         9 Isha Gupta                       ishagupta123@gmail.com              
+7866754433                       2, park street, mumbai                         
+                                                                                
+
+CUSTOMERID NAME                             EMAIL                               
+---------- -------------------------------- --------------------------------    
+PHONE                            ADDRESS                                        
+-------------------------------- --------------------------------               
+        10 Kabir Gupta                      kabirgupta34@gmail.com              
+7789665544                       3, Baner Road, Pune                            
+                                                                                
+
+10 rows selected.
+
+SQL> column name format A15
+SQL> column PHONE format A15
+SQL> column ADDRESS format A15
+SQL> column EMAIL format A15
+SQL> column EMAIL format A15
+SQL> select * from customers;
+
+CUSTOMERID NAME            EMAIL           PHONE           ADDRESS              
+---------- --------------- --------------- --------------- ---------------      
+         1 Anjali Deshmukh anjali.d123@gma 9867452344      14, MG Road, Pu      
+                           il.com                          ne, Maharashtra      
+                                                                                
+         2 Ravi Sharma     ravi.s111@gmail 9120557888      221B, Baner Roa      
+                           .com                            d, Pune              
+                                                                                
+         3 Aarti Thorat    aartik14@gmail. 8805546677      7, Katraj, Pune      
+                           com                                                  
+                                                                                
+         4 Jayashree Thora jayashree232@gm 7865449900      32, Tilak Road,      
+           t               ail.com                          Pune                
+
+CUSTOMERID NAME            EMAIL           PHONE           ADDRESS              
+---------- --------------- --------------- --------------- ---------------      
+                                                                                
+         5 Aarav Sharma    aaravsharma444@ 9978675544      101, MG Road, M      
+                           gmail.com                       umbai                
+                                                                                
+         6 Priya Patel     priyapatel34@gm 8805546677      123, Link Road,      
+                           ail.com                          Delhi               
+                                                                                
+         7 Rohan Kumar     rohankumar101@g 8879055677      212, Park Stree      
+                           mail.com                        t, Bangalore         
+                                                                                
+         8 Rohan Kumar     meeragupta234@g 8877654566      7, Hill Road, K      
+
+CUSTOMERID NAME            EMAIL           PHONE           ADDRESS              
+---------- --------------- --------------- --------------- ---------------      
+                           mail.com                        olkata               
+                                                                                
+         9 Isha Gupta      ishagupta123@gm 7866754433      2, park street,      
+                           ail.com                          mumbai              
+                                                                                
+        10 Kabir Gupta     kabirgupta34@gm 7789665544      3, Baner Road,       
+                           ail.com                         Pune                 
+                                                                                
+
+10 rows selected.
+
+SQL> column EMAIL format A20
+SQL> select * from customers;
+
+CUSTOMERID NAME            EMAIL                PHONE           ADDRESS         
+---------- --------------- -------------------- --------------- --------------- 
+         1 Anjali Deshmukh anjali.d123@gmail.co 9867452344      14, MG Road, Pu 
+                           m                                    ne, Maharashtra 
+                                                                                
+         2 Ravi Sharma     ravi.s111@gmail.com  9120557888      221B, Baner Roa 
+                                                                d, Pune         
+                                                                                
+         3 Aarti Thorat    aartik14@gmail.com   8805546677      7, Katraj, Pune 
+         4 Jayashree Thora jayashree232@gmail.c 7865449900      32, Tilak Road, 
+           t               om                                    Pune           
+                                                                                
+         5 Aarav Sharma    aaravsharma444@gmail 9978675544      101, MG Road, M 
+
+CUSTOMERID NAME            EMAIL                PHONE           ADDRESS         
+---------- --------------- -------------------- --------------- --------------- 
+                           .com                                 umbai           
+                                                                                
+         6 Priya Patel     priyapatel34@gmail.c 8805546677      123, Link Road, 
+                           om                                    Delhi          
+                                                                                
+         7 Rohan Kumar     rohankumar101@gmail. 8879055677      212, Park Stree 
+                           com                                  t, Bangalore    
+                                                                                
+         8 Rohan Kumar     meeragupta234@gmail. 8877654566      7, Hill Road, K 
+                           com                                  olkata          
+                                                                                
+
+CUSTOMERID NAME            EMAIL                PHONE           ADDRESS         
+---------- --------------- -------------------- --------------- --------------- 
+         9 Isha Gupta      ishagupta123@gmail.c 7866754433      2, park street, 
+                           om                                    mumbai         
+                                                                                
+        10 Kabir Gupta     kabirgupta34@gmail.c 7789665544      3, Baner Road,  
+                           om                                   Pune            
+                                                                                
+
+10 rows selected.
+
+SQL> column EMAIL format A32
+SQL> column ADDRESS format A32
+SQL> select * from customers;
+
+CUSTOMERID NAME            EMAIL                            PHONE               
+---------- --------------- -------------------------------- ---------------     
+ADDRESS                                                                         
+--------------------------------                                                
+         1 Anjali Deshmukh anjali.d123@gmail.com            9867452344          
+14, MG Road, Pune, Maharashtra                                                  
+                                                                                
+         2 Ravi Sharma     ravi.s111@gmail.com              9120557888          
+221B, Baner Road, Pune                                                          
+                                                                                
+         3 Aarti Thorat    aartik14@gmail.com               8805546677          
+7, Katraj, Pune                                                                 
+                                                                                
+
+CUSTOMERID NAME            EMAIL                            PHONE               
+---------- --------------- -------------------------------- ---------------     
+ADDRESS                                                                         
+--------------------------------                                                
+         4 Jayashree Thora jayashree232@gmail.com           7865449900          
+           t                                                                    
+32, Tilak Road, Pune                                                            
+                                                                                
+         5 Aarav Sharma    aaravsharma444@gmail.com         9978675544          
+101, MG Road, Mumbai                                                            
+                                                                                
+         6 Priya Patel     priyapatel34@gmail.com           8805546677          
+123, Link Road, Delhi                                                           
+
+CUSTOMERID NAME            EMAIL                            PHONE               
+---------- --------------- -------------------------------- ---------------     
+ADDRESS                                                                         
+--------------------------------                                                
+                                                                                
+         7 Rohan Kumar     rohankumar101@gmail.com          8879055677          
+212, Park Street, Bangalore                                                     
+                                                                                
+         8 Rohan Kumar     meeragupta234@gmail.com          8877654566          
+7, Hill Road, Kolkata                                                           
+                                                                                
+         9 Isha Gupta      ishagupta123@gmail.com           7866754433          
+2, park street, mumbai                                                          
+
+CUSTOMERID NAME            EMAIL                            PHONE               
+---------- --------------- -------------------------------- ---------------     
+ADDRESS                                                                         
+--------------------------------                                                
+                                                                                
+        10 Kabir Gupta     kabirgupta34@gmail.com           7789665544          
+3, Baner Road, Pune                                                             
+                                                                                
+
+10 rows selected.
+
+SQL> column customerid format 999999
+SQL> select * from customers;
+
+CUSTOMERID NAME            EMAIL                            PHONE               
+---------- --------------- -------------------------------- ---------------     
+ADDRESS                                                                         
+--------------------------------                                                
+         1 Anjali Deshmukh anjali.d123@gmail.com            9867452344          
+14, MG Road, Pune, Maharashtra                                                  
+                                                                                
+         2 Ravi Sharma     ravi.s111@gmail.com              9120557888          
+221B, Baner Road, Pune                                                          
+                                                                                
+         3 Aarti Thorat    aartik14@gmail.com               8805546677          
+7, Katraj, Pune                                                                 
+                                                                                
+
+CUSTOMERID NAME            EMAIL                            PHONE               
+---------- --------------- -------------------------------- ---------------     
+ADDRESS                                                                         
+--------------------------------                                                
+         4 Jayashree Thora jayashree232@gmail.com           7865449900          
+           t                                                                    
+32, Tilak Road, Pune                                                            
+                                                                                
+         5 Aarav Sharma    aaravsharma444@gmail.com         9978675544          
+101, MG Road, Mumbai                                                            
+                                                                                
+         6 Priya Patel     priyapatel34@gmail.com           8805546677          
+123, Link Road, Delhi                                                           
+
+CUSTOMERID NAME            EMAIL                            PHONE               
+---------- --------------- -------------------------------- ---------------     
+ADDRESS                                                                         
+--------------------------------                                                
+                                                                                
+         7 Rohan Kumar     rohankumar101@gmail.com          8879055677          
+212, Park Street, Bangalore                                                     
+                                                                                
+         8 Rohan Kumar     meeragupta234@gmail.com          8877654566          
+7, Hill Road, Kolkata                                                           
+                                                                                
+         9 Isha Gupta      ishagupta123@gmail.com           7866754433          
+2, park street, mumbai                                                          
+
+CUSTOMERID NAME            EMAIL                            PHONE               
+---------- --------------- -------------------------------- ---------------     
+ADDRESS                                                                         
+--------------------------------                                                
+                                                                                
+        10 Kabir Gupta     kabirgupta34@gmail.com           7789665544          
+3, Baner Road, Pune                                                             
+                                                                                
+
+10 rows selected.
+
+SQL> column EMAIL format A25
+SQL> /
+
+CUSTOMERID NAME            EMAIL                     PHONE                      
+---------- --------------- ------------------------- ---------------            
+ADDRESS                                                                         
+--------------------------------                                                
+         1 Anjali Deshmukh anjali.d123@gmail.com     9867452344                 
+14, MG Road, Pune, Maharashtra                                                  
+                                                                                
+         2 Ravi Sharma     ravi.s111@gmail.com       9120557888                 
+221B, Baner Road, Pune                                                          
+                                                                                
+         3 Aarti Thorat    aartik14@gmail.com        8805546677                 
+7, Katraj, Pune                                                                 
+                                                                                
+
+CUSTOMERID NAME            EMAIL                     PHONE                      
+---------- --------------- ------------------------- ---------------            
+ADDRESS                                                                         
+--------------------------------                                                
+         4 Jayashree Thora jayashree232@gmail.com    7865449900                 
+           t                                                                    
+32, Tilak Road, Pune                                                            
+                                                                                
+         5 Aarav Sharma    aaravsharma444@gmail.com  9978675544                 
+101, MG Road, Mumbai                                                            
+                                                                                
+         6 Priya Patel     priyapatel34@gmail.com    8805546677                 
+123, Link Road, Delhi                                                           
+
+CUSTOMERID NAME            EMAIL                     PHONE                      
+---------- --------------- ------------------------- ---------------            
+ADDRESS                                                                         
+--------------------------------                                                
+                                                                                
+         7 Rohan Kumar     rohankumar101@gmail.com   8879055677                 
+212, Park Street, Bangalore                                                     
+                                                                                
+         8 Rohan Kumar     meeragupta234@gmail.com   8877654566                 
+7, Hill Road, Kolkata                                                           
+                                                                                
+         9 Isha Gupta      ishagupta123@gmail.com    7866754433                 
+2, park street, mumbai                                                          
+
+CUSTOMERID NAME            EMAIL                     PHONE                      
+---------- --------------- ------------------------- ---------------            
+ADDRESS                                                                         
+--------------------------------                                                
+                                                                                
+        10 Kabir Gupta     kabirgupta34@gmail.com    7789665544                 
+3, Baner Road, Pune                                                             
+                                                                                
+
+10 rows selected.
+
+SQL> column ADDRESS format A25
+SQL> /
+
+CUSTOMERID NAME            EMAIL                     PHONE                      
+---------- --------------- ------------------------- ---------------            
+ADDRESS                                                                         
+-------------------------                                                       
+         1 Anjali Deshmukh anjali.d123@gmail.com     9867452344                 
+14, MG Road, Pune, Mahara                                                       
+shtra                                                                           
+                                                                                
+         2 Ravi Sharma     ravi.s111@gmail.com       9120557888                 
+221B, Baner Road, Pune                                                          
+                                                                                
+         3 Aarti Thorat    aartik14@gmail.com        8805546677                 
+7, Katraj, Pune                                                                 
+
+CUSTOMERID NAME            EMAIL                     PHONE                      
+---------- --------------- ------------------------- ---------------            
+ADDRESS                                                                         
+-------------------------                                                       
+                                                                                
+         4 Jayashree Thora jayashree232@gmail.com    7865449900                 
+           t                                                                    
+32, Tilak Road, Pune                                                            
+                                                                                
+         5 Aarav Sharma    aaravsharma444@gmail.com  9978675544                 
+101, MG Road, Mumbai                                                            
+                                                                                
+         6 Priya Patel     priyapatel34@gmail.com    8805546677                 
+
+CUSTOMERID NAME            EMAIL                     PHONE                      
+---------- --------------- ------------------------- ---------------            
+ADDRESS                                                                         
+-------------------------                                                       
+123, Link Road, Delhi                                                           
+                                                                                
+         7 Rohan Kumar     rohankumar101@gmail.com   8879055677                 
+212, Park Street, Bangalo                                                       
+re                                                                              
+                                                                                
+         8 Rohan Kumar     meeragupta234@gmail.com   8877654566                 
+7, Hill Road, Kolkata                                                           
+                                                                                
+
+CUSTOMERID NAME            EMAIL                     PHONE                      
+---------- --------------- ------------------------- ---------------            
+ADDRESS                                                                         
+-------------------------                                                       
+         9 Isha Gupta      ishagupta123@gmail.com    7866754433                 
+2, park street, mumbai                                                          
+                                                                                
+        10 Kabir Gupta     kabirgupta34@gmail.com    7789665544                 
+3, Baner Road, Pune                                                             
+                                                                                
+
+10 rows selected.
+
+SQL> SET LINESIZE 200
+SQL> SET PAGESIZE 200
+SQL> select * from customers;
+
+CUSTOMERID NAME            EMAIL                     PHONE           ADDRESS                                                                                                                            
+---------- --------------- ------------------------- --------------- -------------------------                                                                                                          
+         1 Anjali Deshmukh anjali.d123@gmail.com     9867452344      14, MG Road, Pune, Mahara                                                                                                          
+                                                                     shtra                                                                                                                              
+                                                                                                                                                                                                        
+         2 Ravi Sharma     ravi.s111@gmail.com       9120557888      221B, Baner Road, Pune                                                                                                             
+         3 Aarti Thorat    aartik14@gmail.com        8805546677      7, Katraj, Pune                                                                                                                    
+         4 Jayashree Thora jayashree232@gmail.com    7865449900      32, Tilak Road, Pune                                                                                                               
+           t                                                                                                                                                                                            
+                                                                                                                                                                                                        
+         5 Aarav Sharma    aaravsharma444@gmail.com  9978675544      101, MG Road, Mumbai                                                                                                               
+         6 Priya Patel     priyapatel34@gmail.com    8805546677      123, Link Road, Delhi                                                                                                              
+         7 Rohan Kumar     rohankumar101@gmail.com   8879055677      212, Park Street, Bangalo                                                                                                          
+                                                                     re                                                                                                                                 
+                                                                                                                                                                                                        
+         8 Rohan Kumar     meeragupta234@gmail.com   8877654566      7, Hill Road, Kolkata                                                                                                              
+         9 Isha Gupta      ishagupta123@gmail.com    7866754433      2, park street, mumbai                                                                                                             
+        10 Kabir Gupta     kabirgupta34@gmail.com    7789665544      3, Baner Road, Pune                                                                                                                
+
+10 rows selected.
+
+SQL> DESC ACCOUNTS;
+ Name                                                                                                              Null?    Type
+ ----------------------------------------------------------------------------------------------------------------- -------- ----------------------------------------------------------------------------
+ ACCOUNTID                                                                                                         NOT NULL NUMBER
+ ACCOUNTTYPE                                                                                                       NOT NULL VARCHAR2(20)
+ BALANCE                                                                                                                    NUMBER
+ CUSTOMERID                                                                                                                 NUMBER
+
+SQL> column ACCOUNTID format 999999
+SQL> column ACCOUNTTYPE format A25
+SQL> column BALANCE format 999999
+SQL> column CUSTOMERID format 999999
+SQL> /
+
+CUSTOMERID NAME            EMAIL                     PHONE           ADDRESS                                                                                                                            
+---------- --------------- ------------------------- --------------- -------------------------                                                                                                          
+         1 Anjali Deshmukh anjali.d123@gmail.com     9867452344      14, MG Road, Pune, Mahara                                                                                                          
+                                                                     shtra                                                                                                                              
+                                                                                                                                                                                                        
+         2 Ravi Sharma     ravi.s111@gmail.com       9120557888      221B, Baner Road, Pune                                                                                                             
+         3 Aarti Thorat    aartik14@gmail.com        8805546677      7, Katraj, Pune                                                                                                                    
+         4 Jayashree Thora jayashree232@gmail.com    7865449900      32, Tilak Road, Pune                                                                                                               
+           t                                                                                                                                                                                            
+                                                                                                                                                                                                        
+         5 Aarav Sharma    aaravsharma444@gmail.com  9978675544      101, MG Road, Mumbai                                                                                                               
+         6 Priya Patel     priyapatel34@gmail.com    8805546677      123, Link Road, Delhi                                                                                                              
+         7 Rohan Kumar     rohankumar101@gmail.com   8879055677      212, Park Street, Bangalo                                                                                                          
+                                                                     re                                                                                                                                 
+                                                                                                                                                                                                        
+         8 Rohan Kumar     meeragupta234@gmail.com   8877654566      7, Hill Road, Kolkata                                                                                                              
+         9 Isha Gupta      ishagupta123@gmail.com    7866754433      2, park street, mumbai                                                                                                             
+        10 Kabir Gupta     kabirgupta34@gmail.com    7789665544      3, Baner Road, Pune                                                                                                                
+
+10 rows selected.
+
+SQL> select * from ACCOUNTS;
+
+ACCOUNTID ACCOUNTTYPE               BALANCE CUSTOMERID                                                                                                                                                  
+--------- ------------------------- ------- ----------                                                                                                                                                  
+     1001 SAVINGS                     28450          1                                                                                                                                                  
+     1002 CURRENT                     49301          2                                                                                                                                                  
+     1003 SAVINGS                    230000          2                                                                                                                                                  
+     1004 CURRENT                                    3                                                                                                                                                  
+     1005 CURRENT                     40000          4                                                                                                                                                  
+     1006 SAVINGS                     70000          5                                                                                                                                                  
+     1007 CURRENT                     65000          6                                                                                                                                                  
+     1008 CURRENT                     78000          5                                                                                                                                                  
+     1009 SAVINGS                   #######          7                                                                                                                                                  
+     1010 SAVINGS                    100000         10                                                                                                                                                  
+
+10 rows selected.
+
+SQL> DESC TRANSACTIONS;
+ Name                                                                                                              Null?    Type
+ ----------------------------------------------------------------------------------------------------------------- -------- ----------------------------------------------------------------------------
+ TRANSACTIONID                                                                                                     NOT NULL NUMBER
+ TDATE                                                                                                             NOT NULL DATE
+ AMOUNT                                                                                                            NOT NULL NUMBER
+ TRANSACTIONTYPE                                                                                                   NOT NULL VARCHAR2(20)
+ ACCOUNTID                                                                                                                  NUMBER
+
+SQL> column NAME format A32
+SQL> SELECT * FROM TRANSACTIONS;
+
+TRANSACTIONID TDATE         AMOUNT TRANSACTIONTYPE      ACCOUNTID                                                                                                                                       
+------------- --------- ---------- -------------------- ---------                                                                                                                                       
+         5001 21-JAN-22      23000 CREDIT                    1001                                                                                                                                       
+         5002 22-JUN-25      50000 DEBIT                     1002                                                                                                                                       
+         5003 07-AUG-21      80000 CREDIT                    1003                                                                                                                                       
+         5004 15-JAN-24      70000 CREDIT                    1002                                                                                                                                       
+         5005 22-JAN-22      89000 CREDIT                    1009                                                                                                                                       
+         5006 06-JAN-22      65000 DEBIT                     1008                                                                                                                                       
+         5007 15-AUG-23      80000 DEBIT                     1007                                                                                                                                       
+         5008 04-AUG-20      45000 CREDIT                    1006                                                                                                                                       
+         5009 05-JUL-13      35000 DEBIT                     1005                                                                                                                                       
+         5010 08-JAN-04      45000 DEBIT                     1010                                                                                                                                       
+
+10 rows selected.
+
+SQL> SELECT NAME FROM CUSTOMERS;
+
+NAME                                                                                                                                                                                                    
+--------------------------------                                                                                                                                                                        
+Anjali Deshmukh                                                                                                                                                                                         
+Ravi Sharma                                                                                                                                                                                             
+Aarti Thorat                                                                                                                                                                                            
+Jayashree Thorat                                                                                                                                                                                        
+Aarav Sharma                                                                                                                                                                                            
+Priya Patel                                                                                                                                                                                             
+Rohan Kumar                                                                                                                                                                                             
+Rohan Kumar                                                                                                                                                                                             
+Isha Gupta                                                                                                                                                                                              
+Kabir Gupta                                                                                                                                                                                             
+
+10 rows selected.
+
+SQL> SELECT NAME, PHONE FROM CUSTOMERS;
+
+NAME                             PHONE                                                                                                                                                                  
+-------------------------------- ---------------                                                                                                                                                        
+Anjali Deshmukh                  9867452344                                                                                                                                                             
+Ravi Sharma                      9120557888                                                                                                                                                             
+Aarti Thorat                     8805546677                                                                                                                                                             
+Jayashree Thorat                 7865449900                                                                                                                                                             
+Aarav Sharma                     9978675544                                                                                                                                                             
+Priya Patel                      8805546677                                                                                                                                                             
+Rohan Kumar                      8879055677                                                                                                                                                             
+Rohan Kumar                      8877654566                                                                                                                                                             
+Isha Gupta                       7866754433                                                                                                                                                             
+Kabir Gupta                      7789665544                                                                                                                                                             
+
+10 rows selected.
+
+SQL> SELECT DISTINCT TRANSACTIONTYPE FROM TRANSACTIONS;
+
+TRANSACTIONTYPE                                                                                                                                                                                         
+--------------------                                                                                                                                                                                    
+CREDIT                                                                                                                                                                                                  
+DEBIT                                                                                                                                                                                                   
+
+SQL> SELECT UNIQUE NAME FROM CUSTOMERS;
+
+NAME                                                                                                                                                                                                    
+--------------------------------                                                                                                                                                                        
+Jayashree Thorat                                                                                                                                                                                        
+Kabir Gupta                                                                                                                                                                                             
+Ravi Sharma                                                                                                                                                                                             
+Aarav Sharma                                                                                                                                                                                            
+Priya Patel                                                                                                                                                                                             
+Rohan Kumar                                                                                                                                                                                             
+Aarti Thorat                                                                                                                                                                                            
+Isha Gupta                                                                                                                                                                                              
+Anjali Deshmukh                                                                                                                                                                                         
+
+9 rows selected.
+
+SQL> SELECT  NAME FROM CUSTOMERS
+  2  ORDER BY NAME;
+
+NAME                                                                                                                                                                                                    
+--------------------------------                                                                                                                                                                        
+Aarav Sharma                                                                                                                                                                                            
+Aarti Thorat                                                                                                                                                                                            
+Anjali Deshmukh                                                                                                                                                                                         
+Isha Gupta                                                                                                                                                                                              
+Jayashree Thorat                                                                                                                                                                                        
+Kabir Gupta                                                                                                                                                                                             
+Priya Patel                                                                                                                                                                                             
+Ravi Sharma                                                                                                                                                                                             
+Rohan Kumar                                                                                                                                                                                             
+Rohan Kumar                                                                                                                                                                                             
+
+10 rows selected.
+
+SQL> SELECT NAME FROM CUSTOMERS
+  2  ORDER BY NAME DESC;
+
+NAME                                                                                                                                                                                                    
+--------------------------------                                                                                                                                                                        
+Rohan Kumar                                                                                                                                                                                             
+Rohan Kumar                                                                                                                                                                                             
+Ravi Sharma                                                                                                                                                                                             
+Priya Patel                                                                                                                                                                                             
+Kabir Gupta                                                                                                                                                                                             
+Jayashree Thorat                                                                                                                                                                                        
+Isha Gupta                                                                                                                                                                                              
+Anjali Deshmukh                                                                                                                                                                                         
+Aarti Thorat                                                                                                                                                                                            
+Aarav Sharma                                                                                                                                                                                            
+
+10 rows selected.
+
+SQL> SELECT NAME FROM CUSTOMERS
+  2  ORDER BY NAME ASC;
+
+NAME                                                                                                                                                                                                    
+--------------------------------                                                                                                                                                                        
+Aarav Sharma                                                                                                                                                                                            
+Aarti Thorat                                                                                                                                                                                            
+Anjali Deshmukh                                                                                                                                                                                         
+Isha Gupta                                                                                                                                                                                              
+Jayashree Thorat                                                                                                                                                                                        
+Kabir Gupta                                                                                                                                                                                             
+Priya Patel                                                                                                                                                                                             
+Ravi Sharma                                                                                                                                                                                             
+Rohan Kumar                                                                                                                                                                                             
+Rohan Kumar                                                                                                                                                                                             
+
+10 rows selected.
+
+SQL> SELECT * FROM ACCOUNTS
+  2  WHERE BALANCE>20000;
+
+ACCOUNTID ACCOUNTTYPE               BALANCE CUSTOMERID                                                                                                                                                  
+--------- ------------------------- ------- ----------                                                                                                                                                  
+     1001 SAVINGS                     28450          1                                                                                                                                                  
+     1002 CURRENT                     49301          2                                                                                                                                                  
+     1003 SAVINGS                    230000          2                                                                                                                                                  
+     1005 CURRENT                     40000          4                                                                                                                                                  
+     1006 SAVINGS                     70000          5                                                                                                                                                  
+     1007 CURRENT                     65000          6                                                                                                                                                  
+     1008 CURRENT                     78000          5                                                                                                                                                  
+     1009 SAVINGS                   #######          7                                                                                                                                                  
+     1010 SAVINGS                    100000         10                                                                                                                                                  
+
+9 rows selected.
+
+SQL> SELECT NAME FROM CUSTOMERS
+  2  WHERE
+  3  NAME LIKE 'A%';
+
+NAME                                                                                                                                                                                                    
+--------------------------------                                                                                                                                                                        
+Anjali Deshmukh                                                                                                                                                                                         
+Aarti Thorat                                                                                                                                                                                            
+Aarav Sharma                                                                                                                                                                                            
+
+SQL> SELECT NAME FROM CUSTOMERS
+  2  WHERE
+  3  NAME LIKE '%A';
+
+no rows selected
+
+SQL> ED
+Wrote file afiedt.buf
+
+  1  SELECT NAME FROM CUSTOMERS
+  2  WHERE
+  3* NAME LIKE '%i'
+SQL> /
+
+no rows selected
+
+SQL> SELECT NAME FROM CUSTOMERS
+  2  WHERE
+  3  NAME LIKE '%a';
+
+NAME                                                                                                                                                                                                    
+--------------------------------                                                                                                                                                                        
+Ravi Sharma                                                                                                                                                                                             
+Aarav Sharma                                                                                                                                                                                            
+Isha Gupta                                                                                                                                                                                              
+Kabir Gupta                                                                                                                                                                                             
+
+SQL> SELECT NAME FROM CUSTOMERS
+  2  WHERE
+  3  NAME LIKE 'A%' or NAME LIKE 'R%';
+
+NAME                                                                                                                                                                                                    
+--------------------------------                                                                                                                                                                        
+Anjali Deshmukh                                                                                                                                                                                         
+Ravi Sharma                                                                                                                                                                                             
+Aarti Thorat                                                                                                                                                                                            
+Aarav Sharma                                                                                                                                                                                            
+Rohan Kumar                                                                                                                                                                                             
+Rohan Kumar                                                                                                                                                                                             
+
+6 rows selected.
+
+SQL> SELECT NAME FROM CUSTOMERS
+  2  WHERE
+  3  NAME LIKE 'a%' or NAME LIKE 'r%';
+
+no rows selected
+
+SQL> SELECT NAME, count(name)  FROM CUSTOMERS
+  2  group by name;
+
+NAME                             COUNT(NAME)                                                                                                                                                            
+-------------------------------- -----------                                                                                                                                                            
+Jayashree Thorat                           1                                                                                                                                                            
+Kabir Gupta                                1                                                                                                                                                            
+Ravi Sharma                                1                                                                                                                                                            
+Aarav Sharma                               1                                                                                                                                                            
+Priya Patel                                1                                                                                                                                                            
+Rohan Kumar                                2                                                                                                                                                            
+Aarti Thorat                               1                                                                                                                                                            
+Isha Gupta                                 1                                                                                                                                                            
+Anjali Deshmukh                            1                                                                                                                                                            
+
+9 rows selected.
+
+SQL> SELECT NAME, count(name)  FROM CUSTOMERS
+  2  group by name
+  3  having count(name)>1;
+
+NAME                             COUNT(NAME)                                                                                                                                                            
+-------------------------------- -----------                                                                                                                                                            
+Rohan Kumar                                2                                                                                                                                                            
+
+SQL> SELECT *  FROM ACCOUNTS
+  2  WHERE
+  3  CUSTOMERID IN(1, 2, 3, 4);
+
+ACCOUNTID ACCOUNTTYPE               BALANCE CUSTOMERID                                                                                                                                                  
+--------- ------------------------- ------- ----------                                                                                                                                                  
+     1001 SAVINGS                     28450          1                                                                                                                                                  
+     1002 CURRENT                     49301          2                                                                                                                                                  
+     1003 SAVINGS                    230000          2                                                                                                                                                  
+     1004 CURRENT                                    3                                                                                                                                                  
+     1005 CURRENT                     40000          4                                                                                                                                                  
+
+SQL> SELECT *  FROM ACCOUNTS
+  2  WHERE
+  3  CUSTOMERID NOT IN(1, 2, 3, 4);
+
+ACCOUNTID ACCOUNTTYPE               BALANCE CUSTOMERID                                                                                                                                                  
+--------- ------------------------- ------- ----------                                                                                                                                                  
+     1006 SAVINGS                     70000          5                                                                                                                                                  
+     1007 CURRENT                     65000          6                                                                                                                                                  
+     1008 CURRENT                     78000          5                                                                                                                                                  
+     1009 SAVINGS                   #######          7                                                                                                                                                  
+     1010 SAVINGS                    100000         10                                                                                                                                                  
+
+SQL> SELECT *  FROM TRANSACTIONS
+  2  WHERE
+  3  AMOUNT BETWEEN 20000 AND 80000;
+
+TRANSACTIONID TDATE         AMOUNT TRANSACTIONTYPE      ACCOUNTID                                                                                                                                       
+------------- --------- ---------- -------------------- ---------                                                                                                                                       
+         5001 21-JAN-22      23000 CREDIT                    1001                                                                                                                                       
+         5002 22-JUN-25      50000 DEBIT                     1002                                                                                                                                       
+         5003 07-AUG-21      80000 CREDIT                    1003                                                                                                                                       
+         5004 15-JAN-24      70000 CREDIT                    1002                                                                                                                                       
+         5006 06-JAN-22      65000 DEBIT                     1008                                                                                                                                       
+         5007 15-AUG-23      80000 DEBIT                     1007                                                                                                                                       
+         5008 04-AUG-20      45000 CREDIT                    1006                                                                                                                                       
+         5009 05-JUL-13      35000 DEBIT                     1005                                                                                                                                       
+         5010 08-JAN-04      45000 DEBIT                     1010                                                                                                                                       
+
+9 rows selected.
+
+SQL> SELECT *  FROM TRANSACTIONS
+  2  WHERE
+  3  AMOUNT NOT BETWEEN 20000 AND 80000;
+
+TRANSACTIONID TDATE         AMOUNT TRANSACTIONTYPE      ACCOUNTID                                                                                                                                       
+------------- --------- ---------- -------------------- ---------                                                                                                                                       
+         5005 22-JAN-22      89000 CREDIT                    1009                                                                                                                                       
+
+SQL> SELECT *  FROM ACCOUNTS
+  2  WHERE
+  3  BALACE IS NULL;
+BALACE IS NULL
+*
+ERROR at line 3:
+ORA-00904: "BALACE": invalid identifier 
+
+
+SQL> ED
+Wrote file afiedt.buf
+
+  1  SELECT *  FROM ACCOUNTS
+  2  WHERE
+  3* BALANCE IS NULL
+SQL> /
+
+ACCOUNTID ACCOUNTTYPE               BALANCE CUSTOMERID                                                                                                                                                  
+--------- ------------------------- ------- ----------                                                                                                                                                  
+     1004 CURRENT                                    3                                                                                                                                                  
+
+SQL> ED
+Wrote file afiedt.buf
+
+  1  SELECT *  FROM ACCOUNTS
+  2  WHERE
+  3* BALANCE IS NOT NULL
+SQL> /
+
+ACCOUNTID ACCOUNTTYPE               BALANCE CUSTOMERID                                                                                                                                                  
+--------- ------------------------- ------- ----------                                                                                                                                                  
+     1001 SAVINGS                     28450          1                                                                                                                                                  
+     1002 CURRENT                     49301          2                                                                                                                                                  
+     1003 SAVINGS                    230000          2                                                                                                                                                  
+     1005 CURRENT                     40000          4                                                                                                                                                  
+     1006 SAVINGS                     70000          5                                                                                                                                                  
+     1007 CURRENT                     65000          6                                                                                                                                                  
+     1008 CURRENT                     78000          5                                                                                                                                                  
+     1009 SAVINGS                   #######          7                                                                                                                                                  
+     1010 SAVINGS                    100000         10                                                                                                                                                  
+
+9 rows selected.
+
+SQL> SELECT INTO ACCOUNT1 FROM ACCOUNT;
+SELECT INTO ACCOUNT1 FROM ACCOUNT
+       *
+ERROR at line 1:
+ORA-00936: missing expression 
+
+
+SQL> SELECT INTO ACCOUNT1 FROM ACCOUNTS;
+SELECT INTO ACCOUNT1 FROM ACCOUNTS
+       *
+ERROR at line 1:
+ORA-00936: missing expression 
+
+
+SQL> SELECT * INTO ACCOUNT1 FROM ACCOUNTS;
+SELECT * INTO ACCOUNT1 FROM ACCOUNTS
+              *
+ERROR at line 1:
+ORA-00905: missing keyword 
+
+
+SQL> SELECT * INTO NEWTABLE FROM ACCOUNTS;
+SELECT * INTO NEWTABLE FROM ACCOUNTS
+              *
+ERROR at line 1:
+ORA-00905: missing keyword 
+
+
+SQL> ED
+Wrote file afiedt.buf
+
+  1  INSERT INTO NEWTABLE
+  2* SELECT * FROM ACCOUNTS
+  3  /
+INSERT INTO NEWTABLE
+            *
+ERROR at line 1:
+ORA-00947: not enough values 
+
+
+SQL> ED
+Wrote file afiedt.buf
+
+  1  INSERT INTO NEWTABLE (ACCOUNTID, ACCOUNTTYPE, BALANCE)
+  2  SELECT ACCOUNTID, ACCOUNTTYPE, BALANCE
+  3* FROM ACCOUNTS
+  4  /
+INSERT INTO NEWTABLE (ACCOUNTID, ACCOUNTTYPE, BALANCE)
+                                              *
+ERROR at line 1:
+ORA-00904: "BALANCE": invalid identifier 
+
+
+SQL> ED
+Wrote file afiedt.buf
+
+  1  INSERT INTO NEWTABLE (ACCOUNTID, 'ACCOUNTTYPE', BALANCE)
+  2  SELECT ACCOUNTID, 'ACCOUNTTYPE', BALANCE
+  3* FROM ACCOUNTS
+SQL> /
+INSERT INTO NEWTABLE (ACCOUNTID, 'ACCOUNTTYPE', BALANCE)
+                                 *
+ERROR at line 1:
+ORA-01747: invalid user.table.column, table.column, or column specification 
+
+
+SQL> ED
+Wrote file afiedt.buf
+
+  1  INSERT INTO NEWTABLE (ACCOUNTID, ACCOUNTTYPE, 'BALANCE')
+  2  SELECT ACCOUNTID, ACCOUNTTYPE, 'BALANCE'
+  3* FROM ACCOUNTS
+SQL> /
+INSERT INTO NEWTABLE (ACCOUNTID, ACCOUNTTYPE, 'BALANCE')
+                                              *
+ERROR at line 1:
+ORA-01747: invalid user.table.column, table.column, or column specification 
+
+
+SQL> ED
+Wrote file afiedt.buf
+
+  1  INSERT INTO NEWTABLE (ACCOUNTID, ACCOUNTTYPE, BALANCE)
+  2  SELECT ACCOUNTID, ACCOUNTTYPE, BALANCE
+  3* FROM ACCOUNTS
+SQL> /
+INSERT INTO NEWTABLE (ACCOUNTID, ACCOUNTTYPE, BALANCE)
+                                              *
+ERROR at line 1:
+ORA-00904: "BALANCE": invalid identifier 
+
+
+SQL> ED
+Wrote file afiedt.buf
+
+  1  INSERT INTO NEWTABLE ("ACCOUNTID", "ACCOUNTTYPE", "Balance")
+  2  SELECT "ACCOUNTID", "ACCOUNTTYPE", "Balance"
+  3* FROM ACCOUNTS
+  4  /
+SELECT "ACCOUNTID", "ACCOUNTTYPE", "Balance"
+                                   *
+ERROR at line 2:
+ORA-00904: "Balance": invalid identifier 
+
+
+SQL> ED
+Wrote file afiedt.buf
+
+  1  INSERT INTO NEWTABLE ("ACCOUNTID", "ACCOUNTTYPE", "BALANCE")
+  2  SELECT "ACCOUNTID", "ACCOUNTTYPE", "BALANCE"
+  3* FROM ACCOUNTS
+SQL> /
+INSERT INTO NEWTABLE ("ACCOUNTID", "ACCOUNTTYPE", "BALANCE")
+                                                  *
+ERROR at line 1:
+ORA-00904: "BALANCE": invalid identifier 
+
+
+SQL> SELECT * FROM ACCOUNTS;
+
+ACCOUNTID ACCOUNTTYPE               BALANCE CUSTOMERID                                                                                                                                                  
+--------- ------------------------- ------- ----------                                                                                                                                                  
+     1001 SAVINGS                     28450          1                                                                                                                                                  
+     1002 CURRENT                     49301          2                                                                                                                                                  
+     1003 SAVINGS                    230000          2                                                                                                                                                  
+     1004 CURRENT                                    3                                                                                                                                                  
+     1005 CURRENT                     40000          4                                                                                                                                                  
+     1006 SAVINGS                     70000          5                                                                                                                                                  
+     1007 CURRENT                     65000          6                                                                                                                                                  
+     1008 CURRENT                     78000          5                                                                                                                                                  
+     1009 SAVINGS                   #######          7                                                                                                                                                  
+     1010 SAVINGS                    100000         10                                                                                                                                                  
+
+10 rows selected.
+
+SQL> ED
+Wrote file afiedt.buf
+
+  1  INSERT INTO NEWTABLE ("ACCOUNTID", "ACCOUNTTYPE", "BALANCE_AMT")
+  2  SELECT "ACCOUNTID", "ACCOUNTTYPE", "BALANCE_AMT"
+  3* FROM ACCOUNTS
+  4  /
+SELECT "ACCOUNTID", "ACCOUNTTYPE", "BALANCE_AMT"
+                                   *
+ERROR at line 2:
+ORA-00904: "BALANCE_AMT": invalid identifier 
+
+
+SQL> CREATE TABLE NEWTABLE AS SELECT * FROM ACCOUNTS;
+CREATE TABLE NEWTABLE AS SELECT * FROM ACCOUNTS
+             *
+ERROR at line 1:
+ORA-00955: name is already used by an existing object 
+
+
+SQL> CREATE TABLE NEWTABLE1 AS SELECT * FROM ACCOUNTS;
+
+Table created.
+
+SQL> SELECT * FROM NEWTABLE1;
+
+ACCOUNTID ACCOUNTTYPE               BALANCE CUSTOMERID                                                                                                                                                  
+--------- ------------------------- ------- ----------                                                                                                                                                  
+     1001 SAVINGS                     28450          1                                                                                                                                                  
+     1002 CURRENT                     49301          2                                                                                                                                                  
+     1003 SAVINGS                    230000          2                                                                                                                                                  
+     1004 CURRENT                                    3                                                                                                                                                  
+     1005 CURRENT                     40000          4                                                                                                                                                  
+     1006 SAVINGS                     70000          5                                                                                                                                                  
+     1007 CURRENT                     65000          6                                                                                                                                                  
+     1008 CURRENT                     78000          5                                                                                                                                                  
+     1009 SAVINGS                   #######          7                                                                                                                                                  
+     1010 SAVINGS                    100000         10                                                                                                                                                  
+
+10 rows selected.
+
+SQL> COMMIT;
+
+Commit complete.
+
+SQL> SPOOL ON;
