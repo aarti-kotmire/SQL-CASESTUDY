@@ -1,0 +1,463 @@
+SQL> COLUMN CUSTOMERID FORMAT 999999
+SQL> COLUMN NAME FORMAT A32
+SQL> COLUMN EMAIL FORMAT A32
+SQL> COLUMN PHONE FORMAT A32
+SQL> COLUMN ADDRESS FORMAT A32
+SQL> SELECT * FROM CUSTOMERS;
+
+CUSTOMERID NAME                             EMAIL                               
+---------- -------------------------------- --------------------------------    
+PHONE                            ADDRESS                                        
+-------------------------------- --------------------------------               
+         1 Anjali Deshmukh                  anjali.d123@gmail.com               
+9867452344                       14, MG Road, Pune, Maharashtra                 
+                                                                                
+         2 Ravi Sharma                      ravi.s111@gmail.com                 
+9120557888                       221B, Baner Road, Pune                         
+                                                                                
+         3 Aarti Thorat                     aartik14@gmail.com                  
+8805546677                       7, Katraj, Pune                                
+                                                                                
+
+CUSTOMERID NAME                             EMAIL                               
+---------- -------------------------------- --------------------------------    
+PHONE                            ADDRESS                                        
+-------------------------------- --------------------------------               
+         4 Jayashree Thorat                 jayashree232@gmail.com              
+7865449900                       32, Tilak Road, Pune                           
+                                                                                
+         5 Aarav Sharma                     aaravsharma444@gmail.com            
+9978675544                       101, MG Road, Mumbai                           
+                                                                                
+         6 Priya Patel                      priyapatel34@gmail.com              
+8805546677                       123, Link Road, Delhi                          
+                                                                                
+
+CUSTOMERID NAME                             EMAIL                               
+---------- -------------------------------- --------------------------------    
+PHONE                            ADDRESS                                        
+-------------------------------- --------------------------------               
+         7 Rohan Kumar                      rohankumar101@gmail.com             
+8879055677                       212, Park Street, Bangalore                    
+                                                                                
+         8 Rohan Kumar                      meeragupta234@gmail.com             
+8877654566                       7, Hill Road, Kolkata                          
+                                                                                
+         9 Isha Gupta                       ishagupta123@gmail.com              
+7866754433                       2, park street, mumbai                         
+                                                                                
+
+CUSTOMERID NAME                             EMAIL                               
+---------- -------------------------------- --------------------------------    
+PHONE                            ADDRESS                                        
+-------------------------------- --------------------------------               
+        10 Kabir Gupta                      kabirgupta34@gmail.com              
+7789665544                       3, Baner Road, Pune                            
+                                                                                
+
+10 rows selected.
+
+SQL> SET LINESIZE 200
+SQL> SET PAGESIZE 200
+SQL> SELECT * FROM CUSTOMERS;
+
+CUSTOMERID NAME                             EMAIL                            PHONE                            ADDRESS                                                                                   
+---------- -------------------------------- -------------------------------- -------------------------------- --------------------------------                                                          
+         1 Anjali Deshmukh                  anjali.d123@gmail.com            9867452344                       14, MG Road, Pune, Maharashtra                                                            
+         2 Ravi Sharma                      ravi.s111@gmail.com              9120557888                       221B, Baner Road, Pune                                                                    
+         3 Aarti Thorat                     aartik14@gmail.com               8805546677                       7, Katraj, Pune                                                                           
+         4 Jayashree Thorat                 jayashree232@gmail.com           7865449900                       32, Tilak Road, Pune                                                                      
+         5 Aarav Sharma                     aaravsharma444@gmail.com         9978675544                       101, MG Road, Mumbai                                                                      
+         6 Priya Patel                      priyapatel34@gmail.com           8805546677                       123, Link Road, Delhi                                                                     
+         7 Rohan Kumar                      rohankumar101@gmail.com          8879055677                       212, Park Street, Bangalore                                                               
+         8 Rohan Kumar                      meeragupta234@gmail.com          8877654566                       7, Hill Road, Kolkata                                                                     
+         9 Isha Gupta                       ishagupta123@gmail.com           7866754433                       2, park street, mumbai                                                                    
+        10 Kabir Gupta                      kabirgupta34@gmail.com           7789665544                       3, Baner Road, Pune                                                                       
+
+10 rows selected.
+
+SQL> SELECT * FROM ACCOUNTS;
+
+ ACCOUNTID ACCOUNTTYPE             BALANCE CUSTOMERID                                                                                                                                                   
+---------- -------------------- ---------- ----------                                                                                                                                                   
+      1001 SAVINGS                   28450          1                                                                                                                                                   
+      1002 CURRENT                 49300.9          2                                                                                                                                                   
+      1003 SAVINGS                  230000          2                                                                                                                                                   
+      1004 CURRENT                                  3                                                                                                                                                   
+      1005 CURRENT                   40000          4                                                                                                                                                   
+      1006 SAVINGS                   70000          5                                                                                                                                                   
+      1007 CURRENT                   65000          6                                                                                                                                                   
+      1008 CURRENT                   78000          5                                                                                                                                                   
+      1009 SAVINGS                 4500000          7                                                                                                                                                   
+      1010 SAVINGS                  100000         10                                                                                                                                                   
+
+10 rows selected.
+
+SQL> SELECT * FROM TRANSACTIONS;
+
+TRANSACTIONID TDATE         AMOUNT TRANSACTIONTYPE       ACCOUNTID                                                                                                                                      
+------------- --------- ---------- -------------------- ----------                                                                                                                                      
+         5001 21-JAN-22      23000 CREDIT                     1001                                                                                                                                      
+         5002 22-JUN-25      50000 DEBIT                      1002                                                                                                                                      
+         5003 07-AUG-21      80000 CREDIT                     1003                                                                                                                                      
+         5004 15-JAN-24      70000 CREDIT                     1002                                                                                                                                      
+         5005 22-JAN-22      89000 CREDIT                     1009                                                                                                                                      
+         5006 06-JAN-22      65000 DEBIT                      1008                                                                                                                                      
+         5007 15-AUG-23      80000 DEBIT                      1007                                                                                                                                      
+         5008 04-AUG-20      45000 CREDIT                     1006                                                                                                                                      
+         5009 05-JUL-13      35000 DEBIT                      1005                                                                                                                                      
+         5010 08-JAN-04      45000 DEBIT                      1010                                                                                                                                      
+
+10 rows selected.
+
+SQL> SELECT UPPER(NAME) AS UppercaseName from customers;
+
+UPPERCASENAME                                                                                                                                                                                           
+----------------------------------------------------------------------------------------------------                                                                                                    
+ANJALI DESHMUKH                                                                                                                                                                                         
+RAVI SHARMA                                                                                                                                                                                             
+AARTI THORAT                                                                                                                                                                                            
+JAYASHREE THORAT                                                                                                                                                                                        
+AARAV SHARMA                                                                                                                                                                                            
+PRIYA PATEL                                                                                                                                                                                             
+ROHAN KUMAR                                                                                                                                                                                             
+ROHAN KUMAR                                                                                                                                                                                             
+ISHA GUPTA                                                                                                                                                                                              
+KABIR GUPTA                                                                                                                                                                                             
+
+10 rows selected.
+
+SQL> SELECT LOWER(NAME) AS LowercaseName from customers;
+
+LOWERCASENAME                                                                                                                                                                                           
+----------------------------------------------------------------------------------------------------                                                                                                    
+anjali deshmukh                                                                                                                                                                                         
+ravi sharma                                                                                                                                                                                             
+aarti thorat                                                                                                                                                                                            
+jayashree thorat                                                                                                                                                                                        
+aarav sharma                                                                                                                                                                                            
+priya patel                                                                                                                                                                                             
+rohan kumar                                                                                                                                                                                             
+rohan kumar                                                                                                                                                                                             
+isha gupta                                                                                                                                                                                              
+kabir gupta                                                                                                                                                                                             
+
+10 rows selected.
+
+SQL> SELECT SUBSTRING(NAME,1,1) INITIAL FROM CUSTOMERS;
+SELECT SUBSTRING(NAME,1,1) INITIAL FROM CUSTOMERS
+                           *
+ERROR at line 1:
+ORA-00923: FROM keyword not found where expected 
+
+
+SQL> ED
+Wrote file afiedt.buf
+
+  1* SELECT SUBSTRING(NAME,1,1) AS INITIAL FROM CUSTOMERS
+SQL> /
+SELECT SUBSTRING(NAME,1,1) AS INITIAL FROM CUSTOMERS
+                              *
+ERROR at line 1:
+ORA-00923: FROM keyword not found where expected 
+
+
+SQL> ED
+Wrote file afiedt.buf
+
+  1* SELECT SUBSTRING(NAME, 1, 1) AS Initial FROM CUSTOMERS
+SQL> /
+SELECT SUBSTRING(NAME, 1, 1) AS Initial FROM CUSTOMERS
+                                *
+ERROR at line 1:
+ORA-00923: FROM keyword not found where expected 
+
+
+SQL> ed
+Wrote file afiedt.buf
+
+  1* SELECT SUBSTRING(NAME, 1, 1)  FROM CUSTOMERS
+SQL> /
+SELECT SUBSTRING(NAME, 1, 1)  FROM CUSTOMERS
+       *
+ERROR at line 1:
+ORA-00904: "SUBSTRING": invalid identifier 
+
+
+SQL> ed
+Wrote file afiedt.buf
+
+  1* SELECT SUBSTR(NAME, 1, 1)  FROM CUSTOMERS
+SQL> /
+
+SUBS                                                                                                                                                                                                    
+----                                                                                                                                                                                                    
+A                                                                                                                                                                                                       
+R                                                                                                                                                                                                       
+A                                                                                                                                                                                                       
+J                                                                                                                                                                                                       
+A                                                                                                                                                                                                       
+P                                                                                                                                                                                                       
+R                                                                                                                                                                                                       
+R                                                                                                                                                                                                       
+I                                                                                                                                                                                                       
+K                                                                                                                                                                                                       
+
+10 rows selected.
+
+SQL> ed
+Wrote file afiedt.buf
+
+  1* SELECT SUBSTR(NAME, 1, 1) as INITIAL FROM CUSTOMERS
+SQL> /
+SELECT SUBSTR(NAME, 1, 1) as INITIAL FROM CUSTOMERS
+                             *
+ERROR at line 1:
+ORA-00923: FROM keyword not found where expected 
+
+
+SQL> ED
+Wrote file afiedt.buf
+
+  1* SELECT SUBSTR(NAME, 1, 1)  FROM CUSTOMERS
+SQL> /
+
+SUBS                                                                                                                                                                                                    
+----                                                                                                                                                                                                    
+A                                                                                                                                                                                                       
+R                                                                                                                                                                                                       
+A                                                                                                                                                                                                       
+J                                                                                                                                                                                                       
+A                                                                                                                                                                                                       
+P                                                                                                                                                                                                       
+R                                                                                                                                                                                                       
+R                                                                                                                                                                                                       
+I                                                                                                                                                                                                       
+K                                                                                                                                                                                                       
+
+10 rows selected.
+
+SQL> SELECT COALESCE(PHONE, 'NOT AVAILAIBLE') AS PHONE FROM CUSTOMERS;
+
+PHONE                                                                                                                                                                                                   
+--------------------------------                                                                                                                                                                        
+9867452344                                                                                                                                                                                              
+9120557888                                                                                                                                                                                              
+8805546677                                                                                                                                                                                              
+7865449900                                                                                                                                                                                              
+9978675544                                                                                                                                                                                              
+8805546677                                                                                                                                                                                              
+8879055677                                                                                                                                                                                              
+8877654566                                                                                                                                                                                              
+7866754433                                                                                                                                                                                              
+7789665544                                                                                                                                                                                              
+
+10 rows selected.
+
+SQL> SELECT ROUND(BALANCE, 2) AS ROUNDBALANCE FROM ACCOUNTS;
+
+ROUNDBALANCE                                                                                                                                                                                            
+------------                                                                                                                                                                                            
+       28450                                                                                                                                                                                            
+     49300.9                                                                                                                                                                                            
+      230000                                                                                                                                                                                            
+                                                                                                                                                                                                        
+       40000                                                                                                                                                                                            
+       70000                                                                                                                                                                                            
+       65000                                                                                                                                                                                            
+       78000                                                                                                                                                                                            
+     4500000                                                                                                                                                                                            
+      100000                                                                                                                                                                                            
+
+10 rows selected.
+
+SQL> SELECT TO_CHAR(BALANCE, '9,999,999.99') AS FORMATTEDBALANCE FROM ACCOUNTS;
+
+FORMATTEDBALA                                                                                                                                                                                           
+-------------                                                                                                                                                                                           
+    28,450.00                                                                                                                                                                                           
+    49,300.90                                                                                                                                                                                           
+   230,000.00                                                                                                                                                                                           
+                                                                                                                                                                                                        
+    40,000.00                                                                                                                                                                                           
+    70,000.00                                                                                                                                                                                           
+    65,000.00                                                                                                                                                                                           
+    78,000.00                                                                                                                                                                                           
+ 4,500,000.00                                                                                                                                                                                           
+   100,000.00                                                                                                                                                                                           
+
+10 rows selected.
+
+SQL> SELECT LENGTH(NAME) AS NAMELENGHT FROM CUSTOMERS;
+
+NAMELENGHT                                                                                                                                                                                              
+----------                                                                                                                                                                                              
+        15                                                                                                                                                                                              
+        11                                                                                                                                                                                              
+        12                                                                                                                                                                                              
+        16                                                                                                                                                                                              
+        12                                                                                                                                                                                              
+        11                                                                                                                                                                                              
+        11                                                                                                                                                                                              
+        11                                                                                                                                                                                              
+        10                                                                                                                                                                                              
+        11                                                                                                                                                                                              
+
+10 rows selected.
+
+SQL> SELECT TO_CHAR(TtDATE , 'DD-MM-YYYY')AS FORMATTEDDATE FROM TRANSACTIONS;
+SELECT TO_CHAR(TtDATE , 'DD-MM-YYYY')AS FORMATTEDDATE FROM TRANSACTIONS
+               *
+ERROR at line 1:
+ORA-00904: "TTDATE": invalid identifier 
+
+
+SQL> ED
+Wrote file afiedt.buf
+
+  1* SELECT TO_CHAR(tDATE , 'DD-MM-YYYY')AS FORMATTEDDATE FROM TRANSACTIONS
+SQL> /
+
+FORMATTEDD                                                                                                                                                                                              
+----------                                                                                                                                                                                              
+21-01-2022                                                                                                                                                                                              
+22-06-2025                                                                                                                                                                                              
+07-08-2021                                                                                                                                                                                              
+15-01-2024                                                                                                                                                                                              
+22-01-2022                                                                                                                                                                                              
+06-01-2022                                                                                                                                                                                              
+15-08-2023                                                                                                                                                                                              
+04-08-2020                                                                                                                                                                                              
+05-07-2013                                                                                                                                                                                              
+08-01-2004                                                                                                                                                                                              
+
+10 rows selected.
+
+SQL> SELECT INITCAP(NAME) AS CAPITALIZEDNAME FROM CUSTOMERS;
+
+CAPITALIZEDNAME                                                                                                                                                                                         
+----------------------------------------------------------------------------------------------------                                                                                                    
+Anjali Deshmukh                                                                                                                                                                                         
+Ravi Sharma                                                                                                                                                                                             
+Aarti Thorat                                                                                                                                                                                            
+Jayashree Thorat                                                                                                                                                                                        
+Aarav Sharma                                                                                                                                                                                            
+Priya Patel                                                                                                                                                                                             
+Rohan Kumar                                                                                                                                                                                             
+Rohan Kumar                                                                                                                                                                                             
+Isha Gupta                                                                                                                                                                                              
+Kabir Gupta                                                                                                                                                                                             
+
+10 rows selected.
+
+SQL> SELECT ABS(BALANCE) AS ABSOLUTEBALANCE FROM ACCOUNTS;
+
+ABSOLUTEBALANCE                                                                                                                                                                                         
+---------------                                                                                                                                                                                         
+          28450                                                                                                                                                                                         
+        49300.9                                                                                                                                                                                         
+         230000                                                                                                                                                                                         
+                                                                                                                                                                                                        
+          40000                                                                                                                                                                                         
+          70000                                                                                                                                                                                         
+          65000                                                                                                                                                                                         
+          78000                                                                                                                                                                                         
+        4500000                                                                                                                                                                                         
+         100000                                                                                                                                                                                         
+
+10 rows selected.
+
+SQL> SELECT TRIM(NAME) AS TRIMMEDNAME FROM CUSTOMERS;
+
+TRIMMEDNAME                                                                                                                                                                                             
+----------------------------------------------------------------------------------------------------                                                                                                    
+Anjali Deshmukh                                                                                                                                                                                         
+Ravi Sharma                                                                                                                                                                                             
+Aarti Thorat                                                                                                                                                                                            
+Jayashree Thorat                                                                                                                                                                                        
+Aarav Sharma                                                                                                                                                                                            
+Priya Patel                                                                                                                                                                                             
+Rohan Kumar                                                                                                                                                                                             
+Rohan Kumar                                                                                                                                                                                             
+Isha Gupta                                                                                                                                                                                              
+Kabir Gupta                                                                                                                                                                                             
+
+10 rows selected.
+
+SQL> SELECT NOW() AS CURRENTDATETIME;
+SELECT NOW() AS CURRENTDATETIME
+                              *
+ERROR at line 1:
+ORA-00923: FROM keyword not found where expected 
+
+
+SQL> ED
+Wrote file afiedt.buf
+
+  1* SELECT NOW() AS CurrentDateTime
+SQL> /
+SELECT NOW() AS CurrentDateTime
+                              *
+ERROR at line 1:
+ORA-00923: FROM keyword not found where expected 
+
+
+SQL> SELECT SYSDATE AS CurrentDateTime FROM dual;
+
+CURRENTDA                                                                                                                                                                                               
+---------                                                                                                                                                                                               
+11-AUG-25                                                                                                                                                                                               
+
+SQL> SELECT CURRENT_TIMESTAMP AS CurrentDateTime FROM dual;
+
+CURRENTDATETIME                                                                                                                                                                                         
+---------------------------------------------------------------------------                                                                                                                             
+11-AUG-25 09.19.38.540000 PM +05:30                                                                                                                                                                     
+
+SQL> select current_date as currentDate;
+select current_date as currentDate
+                                 *
+ERROR at line 1:
+ORA-00923: FROM keyword not found where expected 
+
+
+SQL> ed
+Wrote file afiedt.buf
+
+  1* select current_date as currentDate
+SQL> /
+select current_date as currentDate
+                                 *
+ERROR at line 1:
+ORA-00923: FROM keyword not found where expected 
+
+
+SQL> SELECT CURRENT_DATE AS currentDate
+  2  FROM dual;
+
+CURRENTDA                                                                                                                                                                                               
+---------                                                                                                                                                                                               
+11-AUG-25                                                                                                                                                                                               
+
+SQL> select concat(Accounttype, 'balance') as Accountdetails from accounts;
+
+ACCOUNTDETAILS                                                                                                                                                                                          
+---------------------------                                                                                                                                                                             
+SAVINGSbalance                                                                                                                                                                                          
+CURRENTbalance                                                                                                                                                                                          
+SAVINGSbalance                                                                                                                                                                                          
+CURRENTbalance                                                                                                                                                                                          
+CURRENTbalance                                                                                                                                                                                          
+SAVINGSbalance                                                                                                                                                                                          
+CURRENTbalance                                                                                                                                                                                          
+CURRENTbalance                                                                                                                                                                                          
+SAVINGSbalance                                                                                                                                                                                          
+SAVINGSbalance                                                                                                                                                                                          
+
+10 rows selected.
+
+SQL> commit;
+
+Commit complete.
+
+SQL> spool on
