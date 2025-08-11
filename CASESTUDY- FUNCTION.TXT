@@ -460,4 +460,4 @@ SQL> commit;
 
 Commit complete.
 
-SQL> spool on
+
